@@ -27,8 +27,14 @@ resources:
   style: dashed
   abstract: true
 
-- name: ACMPCA
+- name: Service
   subtitle: AWS Service
+  style: dashed
+  backgroundColor: "#FAFAFA"
+  abstract: true
+
+- name: ACMPCA
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Certificate-Authority.svg
@@ -53,7 +59,7 @@ resources:
   abstract: true
 
 - name: AccessAnalyzer
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -62,7 +68,7 @@ resources:
   abstract: true
 
 - name: AmazonMQ
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/MQ.svg
@@ -87,7 +93,7 @@ resources:
   abstract: true
 
 - name: Amplify
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/Mobile/Amplify.svg
@@ -112,7 +118,7 @@ resources:
   abstract: true
 
 - name: ApiGateway
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/API-Gateway.svg
@@ -233,7 +239,7 @@ resources:
   abstract: true
 
 - name: ApiGatewayV2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/API-Gateway.svg
@@ -318,7 +324,7 @@ resources:
   abstract: true
 
 - name: AppConfig
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Config.svg
@@ -361,7 +367,7 @@ resources:
   abstract: true
 
 - name: AppFlow
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -374,7 +380,7 @@ resources:
   abstract: true
 
 - name: AppIntegrations
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -383,7 +389,7 @@ resources:
   abstract: true
 
 - name: AppMesh
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/App-Mesh.svg
@@ -432,7 +438,7 @@ resources:
   abstract: true
 
 - name: AppRunner
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -441,7 +447,7 @@ resources:
   abstract: true
 
 - name: AppStream
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -484,7 +490,7 @@ resources:
   abstract: true
 
 - name: AppSync
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/Mobile/AppSync.svg
@@ -533,7 +539,7 @@ resources:
   abstract: true
 
 - name: ApplicationAutoScaling
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Compute/Application-Auto-Scaling.svg
@@ -552,7 +558,7 @@ resources:
   abstract: true
 
 - name: Athena
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Athena.svg
@@ -583,7 +589,7 @@ resources:
   abstract: true
 
 - name: AuditManager
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -592,7 +598,7 @@ resources:
   abstract: true
 
 - name: AutoScaling
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/_Group Icons/Auto-Scaling.svg
@@ -635,7 +641,7 @@ resources:
   abstract: true
 
 - name: AutoScalingPlans
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -646,7 +652,7 @@ resources:
   abstract: true
 
 - name: Backup
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/Backup.svg
@@ -671,7 +677,7 @@ resources:
   abstract: true
 
 - name: Batch
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Batch.svg
@@ -696,7 +702,7 @@ resources:
   abstract: true
 
 - name: Budgets
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Cost Mgmt/Budgets.svg
@@ -715,7 +721,7 @@ resources:
   abstract: true
 
 - name: CE
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   abstract: true
@@ -736,7 +742,7 @@ resources:
   abstract: true
 
 - name: CUR
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -745,7 +751,7 @@ resources:
   abstract: true
 
 - name: Cassandra
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   abstract: true
@@ -761,7 +767,7 @@ resources:
   abstract: true
 
 - name: CertificateManager
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Certificate-Manager.svg
@@ -780,7 +786,7 @@ resources:
   abstract: true
 
 - name: Chatbot
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -791,7 +797,7 @@ resources:
   abstract: true
 
 - name: Cloud9
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/Cloud9.svg
@@ -804,7 +810,7 @@ resources:
   abstract: true
 
 - name: CloudFormation
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudFormation.svg
@@ -889,7 +895,7 @@ resources:
   abstract: true
 
 - name: CloudFront
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/CloudFront.svg
@@ -950,7 +956,7 @@ resources:
   abstract: true
 
 - name: CloudTrail
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudTrail.svg
@@ -963,7 +969,7 @@ resources:
   abstract: true
 
 - name: CloudWatch
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudWatch.svg
@@ -1006,7 +1012,7 @@ resources:
   abstract: true
 
 - name: CodeArtifact
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   abstract: true
@@ -1022,7 +1028,7 @@ resources:
   abstract: true
 
 - name: CodeBuild
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeBuild.svg
@@ -1065,7 +1071,7 @@ resources:
   abstract: true
 
 - name: CodeCommit
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeCommit.svg
@@ -1078,7 +1084,7 @@ resources:
   abstract: true
 
 - name: CodeDeploy
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeDeploy.svg
@@ -1103,7 +1109,7 @@ resources:
   abstract: true
 
 - name: CodeGuruProfiler
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -1114,7 +1120,7 @@ resources:
   abstract: true
 
 - name: CodeGuruReviewer
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -1125,7 +1131,7 @@ resources:
   abstract: true
 
 - name: CodePipeline
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodePipeline.svg
@@ -1150,7 +1156,7 @@ resources:
   abstract: true
 
 - name: CodeStar
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeStar.svg
@@ -1163,7 +1169,7 @@ resources:
   abstract: true
 
 - name: CodeStarConnections
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Mgmt & Gov/Config.svg
@@ -1176,7 +1182,7 @@ resources:
   abstract: true
 
 - name: CodeStarNotifications
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeStar.svg
@@ -1189,7 +1195,7 @@ resources:
   abstract: true
 
 - name: Cognito
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Cognito.svg
@@ -1268,7 +1274,7 @@ resources:
   abstract: true
 
 - name: Config
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Config.svg
@@ -1335,7 +1341,7 @@ resources:
   abstract: true
 
 - name: Connect
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/Customer Engagement/Connect.svg
@@ -1348,7 +1354,7 @@ resources:
   abstract: true
 
 - name: CustomerProfiles
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -1365,7 +1371,7 @@ resources:
   abstract: true
 
 - name: DAX
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/DynamoDB_DAX.svg
@@ -1390,7 +1396,7 @@ resources:
   abstract: true
 
 - name: DLM
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -1399,7 +1405,7 @@ resources:
   abstract: true
 
 - name: DMS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -1435,7 +1441,7 @@ resources:
   abstract: true
 
 - name: DataBrew
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   abstract: true
@@ -1466,7 +1472,7 @@ resources:
   abstract: true
 
 - name: DataPipeline
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Data-Pipeline.svg
@@ -1479,7 +1485,7 @@ resources:
   abstract: true
 
 - name: DataSync
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   icon: AWS/Migration & Transfer/DataSync.svg
@@ -1534,7 +1540,7 @@ resources:
   abstract: true
 
 - name: Detective
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -1550,7 +1556,7 @@ resources:
   abstract: true
 
 - name: DevOpsGuru
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -1566,7 +1572,7 @@ resources:
   abstract: true
 
 - name: DirectoryService
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   icon: AWS/SIC/Directory-Service.svg
   abstract: true
@@ -1582,7 +1588,7 @@ resources:
   abstract: true
 
 - name: DocDB
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/DocumentDB-with-MongoDB-compatibility.svg
@@ -1613,7 +1619,7 @@ resources:
   abstract: true
 
 - name: DynamoDB
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/DynamoDB.svg
@@ -1632,7 +1638,7 @@ resources:
   abstract: true
 
 - name: EC2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/EC2.svg
@@ -2071,7 +2077,7 @@ resources:
   abstract: true
 
 - name: ECR
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   abstract: true
@@ -2097,7 +2103,7 @@ resources:
   abstract: true
 
 - name: ECS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/ECS.svg
@@ -2146,7 +2152,7 @@ resources:
   abstract: true
 
 - name: EFS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/EFS.svg
@@ -2171,7 +2177,7 @@ resources:
   abstract: true
 
 - name: EKS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Elastic-Kubernetes-Service.svg
@@ -2202,7 +2208,7 @@ resources:
   abstract: true
 
 - name: EMR
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/EMR.svg
@@ -2251,7 +2257,7 @@ resources:
   abstract: true
 
 - name: EMRContainers
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   abstract: true
@@ -2262,7 +2268,7 @@ resources:
   abstract: true
 
 - name: ElastiCache
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/ElastiCache.svg
@@ -2323,7 +2329,7 @@ resources:
   abstract: true
 
 - name: ElasticBeanstalk
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Elastic-Beanstalk.svg
@@ -2354,7 +2360,7 @@ resources:
   abstract: true
 
 - name: ElasticLoadBalancing
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Networking/ELB.svg
@@ -2367,7 +2373,7 @@ resources:
   abstract: true
 
 - name: ElasticLoadBalancingV2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Networking/ELB.svg
@@ -2404,7 +2410,7 @@ resources:
   abstract: true
 
 - name: Elasticsearch
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Elasticsearch-Service.svg
@@ -2417,7 +2423,7 @@ resources:
   abstract: true
 
 - name: EventSchemas
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -2438,7 +2444,7 @@ resources:
   abstract: true
 
 - name: Events
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -2467,7 +2473,7 @@ resources:
   abstract: true
 
 - name: FIS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -2478,7 +2484,7 @@ resources:
   abstract: true
 
 - name: FMS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -2494,7 +2500,7 @@ resources:
   abstract: true
 
 - name: FSx
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/FSx.svg
@@ -2507,7 +2513,7 @@ resources:
   abstract: true
 
 - name: FinSpace
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   abstract: true
@@ -2518,7 +2524,7 @@ resources:
   abstract: true
 
 - name: FraudDetector
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -2554,7 +2560,7 @@ resources:
   abstract: true
 
 - name: GameLift
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Game Tech/GameLift.svg
@@ -2609,7 +2615,7 @@ resources:
   abstract: true
 
 - name: GlobalAccelerator
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Global-Accelerator.svg
@@ -2634,7 +2640,7 @@ resources:
   abstract: true
 
 - name: Glue
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Glue.svg
@@ -2743,7 +2749,7 @@ resources:
   abstract: true
 
 - name: Greengrass
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Greengrass.svg
@@ -2846,7 +2852,7 @@ resources:
   abstract: true
 
 - name: GreengrassV2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   abstract: true
@@ -2857,7 +2863,7 @@ resources:
   abstract: true
 
 - name: GroundStation
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Satellite/Ground-Station.svg
@@ -2882,7 +2888,7 @@ resources:
   abstract: true
 
 - name: GuardDuty
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/GuardDuty.svg
@@ -2925,7 +2931,7 @@ resources:
   abstract: true
 
 - name: IAM
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
@@ -3010,7 +3016,7 @@ resources:
   abstract: true
 
 - name: IVS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   abstract: true
@@ -3036,7 +3042,7 @@ resources:
   abstract: true
 
 - name: ImageBuilder
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   abstract: true
@@ -3077,7 +3083,7 @@ resources:
   abstract: true
 
 - name: Inspector
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Inspector.svg
@@ -3102,14 +3108,14 @@ resources:
   abstract: true
 
 - name: IoT
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
 - name: IoT1Click
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-1-Click.svg
@@ -3230,7 +3236,7 @@ resources:
   abstract: true
 
 - name: IoTAnalytics
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Analytics.svg
@@ -3261,7 +3267,7 @@ resources:
   abstract: true
 
 - name: IoTCoreDeviceAdvisor
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
@@ -3274,7 +3280,7 @@ resources:
   abstract: true
 
 - name: IoTEvents
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Events.svg
@@ -3293,7 +3299,7 @@ resources:
   abstract: true
 
 - name: IoTFleetHub
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
@@ -3306,7 +3312,7 @@ resources:
   abstract: true
 
 - name: IoTSiteWise
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-SiteWise.svg
@@ -3355,7 +3361,7 @@ resources:
   abstract: true
 
 - name: IoTThingsGraph
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Things-Graph.svg
@@ -3368,7 +3374,7 @@ resources:
   abstract: true
 
 - name: IoTWireless
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
@@ -3417,7 +3423,7 @@ resources:
   abstract: true
 
 - name: KMS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Key-Management-Service.svg
@@ -3442,7 +3448,7 @@ resources:
   abstract: true
 
 - name: Kendra
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -3463,7 +3469,7 @@ resources:
   abstract: true
 
 - name: Kinesis
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
@@ -3482,7 +3488,7 @@ resources:
   abstract: true
 
 - name: KinesisAnalytics
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
@@ -3507,7 +3513,7 @@ resources:
   abstract: true
 
 - name: KinesisAnalyticsV2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
@@ -3538,7 +3544,7 @@ resources:
   abstract: true
 
 - name: KinesisFirehose
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis-Data-Firehose.svg
@@ -3551,7 +3557,7 @@ resources:
   abstract: true
 
 - name: LakeFormation
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Lake-Formation.svg
@@ -3576,7 +3582,7 @@ resources:
   abstract: true
 
 - name: Lambda
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Lambda.svg
@@ -3637,7 +3643,7 @@ resources:
   abstract: true
 
 - name: LicenseManager
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/License-Manager.svg
@@ -3656,7 +3662,7 @@ resources:
   abstract: true
 
 - name: Location
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -3692,7 +3698,7 @@ resources:
   abstract: true
 
 - name: Logs
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudWatch.svg
@@ -3741,7 +3747,7 @@ resources:
   abstract: true
 
 - name: LookoutEquipment
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -3752,7 +3758,7 @@ resources:
   abstract: true
 
 - name: LookoutMetrics
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -3768,7 +3774,7 @@ resources:
   abstract: true
 
 - name: LookoutVision
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -3779,7 +3785,7 @@ resources:
   abstract: true
 
 - name: MSK
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -3788,7 +3794,7 @@ resources:
   abstract: true
 
 - name: MWAA
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -3799,7 +3805,7 @@ resources:
   abstract: true
 
 - name: Macie
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Macie.svg
@@ -3824,7 +3830,7 @@ resources:
   abstract: true
 
 - name: ManagedBlockchain
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Blockchain/Managed-Blockchain.svg
@@ -3843,7 +3849,7 @@ resources:
   abstract: true
 
 - name: MediaConnect
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaConnect.svg
@@ -3880,7 +3886,7 @@ resources:
   abstract: true
 
 - name: MediaConvert
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaConvert.svg
@@ -3905,7 +3911,7 @@ resources:
   abstract: true
 
 - name: MediaLive
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaLive.svg
@@ -3930,7 +3936,7 @@ resources:
   abstract: true
 
 - name: MediaPackage
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaPackage.svg
@@ -3967,7 +3973,7 @@ resources:
   abstract: true
 
 - name: MediaStore
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaStore.svg
@@ -3980,7 +3986,7 @@ resources:
   abstract: true
 
 - name: Neptune
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/Neptune.svg
@@ -4017,7 +4023,7 @@ resources:
   abstract: true
 
 - name: NetworkFirewall
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Firewall-Manager.svg
@@ -4048,7 +4054,7 @@ resources:
   abstract: true
 
 - name: NetworkManager
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -4089,7 +4095,7 @@ resources:
   abstract: true
 
 - name: NimbleStudio
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -4115,7 +4121,7 @@ resources:
   abstract: true
 
 - name: OpsWorks
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/OpsWorks.svg
@@ -4164,7 +4170,7 @@ resources:
   abstract: true
 
 - name: OpsWorksCM
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/OpsWorks.svg
@@ -4177,7 +4183,7 @@ resources:
   abstract: true
 
 - name: Pinpoint
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Mobile/Pinpoint.svg
@@ -4292,7 +4298,7 @@ resources:
   abstract: true
 
 - name: PinpointEmail
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Mobile/Pinpoint.svg
@@ -4323,7 +4329,7 @@ resources:
   abstract: true
 
 - name: QLDB
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Blockchain/Quantum-Ledger-Database-QLDB.svg
@@ -4342,7 +4348,7 @@ resources:
   abstract: true
 
 - name: QuickSight
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Quicksight.svg
@@ -4385,7 +4391,7 @@ resources:
   abstract: true
 
 - name: RAM
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -4396,7 +4402,7 @@ resources:
   abstract: true
 
 - name: RDS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/RDS.svg
@@ -4481,7 +4487,7 @@ resources:
   abstract: true
 
 - name: Redshift
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Database/Redshift.svg
@@ -4518,7 +4524,7 @@ resources:
   abstract: true
 
 - name: ResourceGroups
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -4529,7 +4535,7 @@ resources:
   abstract: true
 
 - name: RoboMaker
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/Robotics/RoboMaker.svg
@@ -4572,7 +4578,7 @@ resources:
   abstract: true
 
 - name: Route53
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
@@ -4615,7 +4621,7 @@ resources:
   abstract: true
 
 - name: Route53RecoveryControl
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
@@ -4646,7 +4652,7 @@ resources:
   abstract: true
 
 - name: Route53RecoveryReadiness
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
@@ -4677,7 +4683,7 @@ resources:
   abstract: true
 
 - name: Route53Resolver
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
@@ -4738,7 +4744,7 @@ resources:
   abstract: true
 
 - name: S3
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/S3.svg
@@ -4769,7 +4775,7 @@ resources:
   abstract: true
 
 - name: S3ObjectLambda
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/S3.svg
@@ -4788,7 +4794,7 @@ resources:
   abstract: true
 
 - name: S3Outposts
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#448A27"
   icon: AWS/Storage/S3.svg
@@ -4819,7 +4825,7 @@ resources:
   abstract: true
 
 - name: SDB
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -4828,7 +4834,7 @@ resources:
   abstract: true
 
 - name: SES
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
@@ -4877,7 +4883,7 @@ resources:
   abstract: true
 
 - name: SNS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/SNS.svg
@@ -4902,7 +4908,7 @@ resources:
   abstract: true
 
 - name: SQS
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/SQS.svg
@@ -4921,7 +4927,7 @@ resources:
   abstract: true
 
 - name: SSM
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -4967,7 +4973,7 @@ resources:
   abstract: true
 
 - name: SSMContacts
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -4983,7 +4989,7 @@ resources:
   abstract: true
 
 - name: SSMIncidents
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   abstract: true
@@ -4999,7 +5005,7 @@ resources:
   abstract: true
 
 - name: SSO
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -5020,7 +5026,7 @@ resources:
   abstract: true
 
 - name: SageMaker
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   icon: AWS/ML/SageMaker.svg
@@ -5171,7 +5177,7 @@ resources:
   abstract: true
 
 - name: SecretsManager
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Secrets-Manager.svg
@@ -5202,7 +5208,7 @@ resources:
   abstract: true
 
 - name: SecurityHub
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Security-Hub.svg
@@ -5215,7 +5221,7 @@ resources:
   abstract: true
 
 - name: ServiceCatalog
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Service-Catalog.svg
@@ -5318,7 +5324,7 @@ resources:
   abstract: true
 
 - name: ServiceCatalogAppRegistry
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Service-Catalog.svg
@@ -5349,7 +5355,7 @@ resources:
   abstract: true
 
 - name: ServiceDiscovery
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   abstract: true
@@ -5380,7 +5386,7 @@ resources:
   abstract: true
 
 - name: Signer
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   abstract: true
@@ -5396,7 +5402,7 @@ resources:
   abstract: true
 
 - name: StepFunctions
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/Step-Functions.svg
@@ -5415,7 +5421,7 @@ resources:
   abstract: true
 
 - name: Synthetics
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   abstract: true
 
@@ -5424,7 +5430,7 @@ resources:
   abstract: true
 
 - name: Timestream
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Database/Timestream.svg
@@ -5443,7 +5449,7 @@ resources:
   abstract: true
 
 - name: Transfer
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   icon: AWS/Migration & Transfer/Migration-and-Transfer.svg
@@ -5462,7 +5468,7 @@ resources:
   abstract: true
 
 - name: WAF
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
@@ -5511,7 +5517,7 @@ resources:
   abstract: true
 
 - name: WAFRegional
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
@@ -5584,7 +5590,7 @@ resources:
   abstract: true
 
 - name: WAFv2
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
@@ -5621,7 +5627,7 @@ resources:
   abstract: true
 
 - name: WorkSpaces
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#2E907B"
   icon: AWS/End User Computing/Workspaces.svg
@@ -5640,7 +5646,7 @@ resources:
   abstract: true
 
 - name: XRay
-  subtitle: AWS Service
+  instanceOf: Service
   style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/X-Ray.svg
