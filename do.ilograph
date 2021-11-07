@@ -24,8 +24,16 @@ resources:
     color: '#0080FF'
     abstract: true
 
+  - name: DO DB
+    subtitle: DigitalOcean Managed Database
+    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-DB.svg
+    color: "#E4750E"
+    style: dashed
+    abstract: true
+
   - name: DO MySQL
     subtitle: DigitalOcean Managed MySQL DB
+    instanceOf: DO DB
     icon: https://images.4lch4.cloud/icons/digitalocean/Managed-MySQL.svg
     style: dashed
     color: '#0080FF'
@@ -33,13 +41,15 @@ resources:
 
   - name: DO Postgres
     subtitle: DigitalOcean Managed Postgres DB
+    instanceOf: DO DB
     icon: https://images.4lch4.cloud/icons/digitalocean/Managed-Postgres.svg
     color: '#0080FF'
     abstract: true
 
   - name: DO Redis
     subtitle: DigitalOcean Managed Redis DB
-    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-Redis-0.svg
+    instanceOf: DO DB
+    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-Redis.svg
     color: '#0080FF'
     abstract: true
 
