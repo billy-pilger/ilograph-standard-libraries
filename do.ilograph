@@ -1,0 +1,122 @@
+# Copyright 2021 4lch4 Industries, LLC.
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# Custom DigitalOcean (DO) definitions for use with Ilograph (https://app.ilograph.com)
+# Available icon list https://www.ilograph.com/docs/iconlist.txt
+
+resources:
+  - name: DO Droplet
+    subtitle: DigitalOcean Droplet
+    icon: https://images.4lch4.cloud/icons/digitalocean/Standard-Droplet.svg
+    style: dashed
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO Project
+    subtitle: DigitalOcean Project
+    icon: https://images.4lch4.cloud/icons/digitalocean/Project.svg
+    style: dashed
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO MySQL
+    subtitle: DigitalOcean Managed MySQL DB
+    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-MySQL.svg
+    style: dashed
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO Postgres
+    subtitle: DigitalOcean Managed Postgres DB
+    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-Postgres.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO Redis
+    subtitle: DigitalOcean Managed Redis DB
+    icon: https://images.4lch4.cloud/icons/digitalocean/Managed-Redis-0.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO SOS
+    subtitle: DigitalOcean Spaces Object Storage
+    icon: https://images.4lch4.cloud/icons/digitalocean/Spaces-Object-Storage.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO SCDN
+    subtitle: DigitalOcean Spaces Content Delivery Network
+    icon: https://images.4lch4.cloud/icons/digitalocean/Spaces-CDN.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO VBS
+    subtitle: DigitalOcean Volume Block Storage
+    icon: https://images.4lch4.cloud/icons/digitalocean/Volumes-Block-Storage.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO CFW
+    subtitle: DigitalOcean Cloud Firewall
+    icon: https://images.4lch4.cloud/icons/digitalocean/Cloud-Firewall.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO LB
+    subtitle: DigitalOcean Load Balancer
+    icon: https://images.4lch4.cloud/icons/digitalocean/Load-Balancer.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO VPC
+    subtitle: DigitalOcean Virtual Private Cloud
+    icon: https://images.4lch4.cloud/icons/digitalocean/Virtual-Private-Cloud.svg
+    color: '#0080FF'
+    abstract: true
+
+  - name: DO Team
+    subtitle: DigitalOcean Team
+    icon: https://images.4lch4.cloud/icons/digitalocean/Team.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DO Monitoring
+    subtitle: DigitalOcean Monitoring
+    icon: https://images.4lch4.cloud/icons/digitalocean/Monitoring.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DO K8S
+    subtitle: DigitalOcean Managed Kubernetes
+    icon: https://images.4lch4.cloud/icons/digitalocean/Kubernetes.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DO FIP
+    subtitle: DigitalOcean Floating IP
+    icon: https://images.4lch4.cloud/icons/digitalocean/Floating-IP.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DO DNS
+    subtitle: DigitalOcean Domain Name System
+    icon: https://images.4lch4.cloud/icons/digitalocean/Domain-Name-System.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DO API
+    subtitle: DigitalOcean API
+    icon: https://images.4lch4.cloud/icons/digitalocean/API.svg
+    color: '#E4750E'
+    abstract: true
+
+  - name: DOCTL
+    subtitle: DigitalOcean Command Line Interface
+    icon: https://images.4lch4.cloud/icons/digitalocean/CLI.svg
+    color: '#E4750E'
+    abstract: true
