@@ -1,4 +1,4 @@
-# Copyright 2021 Ilograph LLC
+# Copyright 2022 Ilograph LLC
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -35,41 +35,72 @@ resources:
 
 - name: ACMPCA
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/SIC/Certificate-Authority.svg
+  icon: AWS/SIC/Certificate-Manager_Certificate-Authority.svg
   abstract: true
 
 - name: ACMPCA::Certificate
   subtitle: Certificate
   color: "#DE2D34"
-  icon: AWS/SIC/Certificate-Authority.svg
+  icon: AWS/SIC/Certificate-Manager_Certificate-Authority.svg
   abstract: true
 
 - name: ACMPCA::CertificateAuthority
   subtitle: Certificate Authority
   color: "#DE2D34"
-  icon: AWS/SIC/Certificate-Authority.svg
+  icon: AWS/SIC/Certificate-Manager_Certificate-Authority.svg
   abstract: true
 
 - name: ACMPCA::CertificateAuthorityActivation
   subtitle: Certificate Authority Activation
   color: "#DE2D34"
-  icon: AWS/SIC/Certificate-Authority.svg
+  icon: AWS/SIC/Certificate-Manager_Certificate-Authority.svg
+  abstract: true
+
+- name: ACMPCA::Permission
+  subtitle: Permission
+  color: "#DE2D34"
+  icon: AWS/SIC/Certificate-Manager_Certificate-Authority.svg
+  abstract: true
+
+- name: APS
+  instanceOf: Service
+  abstract: true
+
+- name: APS::RuleGroupsNamespace
+  subtitle: Rule Groups Namespace
+  abstract: true
+
+- name: APS::Workspace
+  subtitle: Workspace
+  abstract: true
+
+- name: ARCZonalShift
+  instanceOf: Service
+  abstract: true
+
+- name: ARCZonalShift::ZonalAutoshiftConfiguration
+  subtitle: Zonal Autoshift Configuration
   abstract: true
 
 - name: AccessAnalyzer
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: AccessAnalyzer::Analyzer
   subtitle: Analyzer
   abstract: true
 
+- name: Alexa
+  instanceOf: Service
+  abstract: true
+
+- name: Alexa::ASK::Skill
+  subtitle: Skill
+  abstract: true
+
 - name: AmazonMQ
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/MQ.svg
   abstract: true
@@ -94,294 +125,328 @@ resources:
 
 - name: Amplify
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/Mobile/Amplify.svg
+  icon: AWS/Front End/Amplify.svg
   abstract: true
 
 - name: Amplify::App
   subtitle: App
   color: "#DE2D34"
-  icon: AWS/Mobile/Amplify.svg
+  icon: AWS/Front End/Amplify.svg
   abstract: true
 
 - name: Amplify::Branch
   subtitle: Branch
   color: "#DE2D34"
-  icon: AWS/Mobile/Amplify.svg
+  icon: AWS/Front End/Amplify.svg
   abstract: true
 
 - name: Amplify::Domain
   subtitle: Domain
   color: "#DE2D34"
-  icon: AWS/Mobile/Amplify.svg
+  icon: AWS/Front End/Amplify.svg
+  abstract: true
+
+- name: AmplifyUIBuilder
+  instanceOf: Service
+  abstract: true
+
+- name: AmplifyUIBuilder::Component
+  subtitle: Component
+  abstract: true
+
+- name: AmplifyUIBuilder::Form
+  subtitle: Form
+  abstract: true
+
+- name: AmplifyUIBuilder::Theme
+  subtitle: Theme
   abstract: true
 
 - name: ApiGateway
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Account
   subtitle: Account
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::ApiKey
   subtitle: Api Key
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Authorizer
   subtitle: Authorizer
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::BasePathMapping
   subtitle: Base Path Mapping
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::ClientCertificate
   subtitle: Client Certificate
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Deployment
   subtitle: Deployment
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::DocumentationPart
   subtitle: Documentation Part
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::DocumentationVersion
   subtitle: Documentation Version
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::DomainName
   subtitle: Domain Name
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::GatewayResponse
   subtitle: Gateway Response
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Method
   subtitle: Method
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Model
   subtitle: Model
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::RequestValidator
   subtitle: Request Validator
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Resource
   subtitle: Resource
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::RestApi
   subtitle: Rest Api
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::Stage
   subtitle: Stage
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::UsagePlan
   subtitle: Usage Plan
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::UsagePlanKey
   subtitle: Usage Plan Key
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGateway::VpcLink
   subtitle: Vpc Link
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Api
   subtitle: Api
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::ApiGatewayManagedOverrides
   subtitle: Api Gateway Managed Overrides
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::ApiMapping
   subtitle: Api Mapping
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Authorizer
   subtitle: Authorizer
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Deployment
   subtitle: Deployment
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::DomainName
   subtitle: Domain Name
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Integration
   subtitle: Integration
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::IntegrationResponse
   subtitle: Integration Response
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Model
   subtitle: Model
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Route
   subtitle: Route
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::RouteResponse
   subtitle: Route Response
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::Stage
   subtitle: Stage
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: ApiGatewayV2::VpcLink
   subtitle: Vpc Link
   color: "#7747D4"
-  icon: AWS/Networking/API-Gateway.svg
+  icon: AWS/App Integration/API-Gateway.svg
   abstract: true
 
 - name: AppConfig
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::Application
   subtitle: Application
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::ConfigurationProfile
   subtitle: Configuration Profile
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::Deployment
   subtitle: Deployment
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::DeploymentStrategy
   subtitle: Deployment Strategy
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::Environment
   subtitle: Environment
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
+  abstract: true
+
+- name: AppConfig::Extension
+  subtitle: Extension
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/AppConfig.svg
+  abstract: true
+
+- name: AppConfig::ExtensionAssociation
+  subtitle: Extension Association
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppConfig::HostedConfigurationVersion
   subtitle: Hosted Configuration Version
   color: "#D82C6C"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Mgmt & Gov/AppConfig.svg
   abstract: true
 
 - name: AppFlow
   instanceOf: Service
-  style: dashed
+  icon: AWS/App Integration/AppFlow.svg
+  abstract: true
+
+- name: AppFlow::Connector
+  subtitle: Connector
+  icon: AWS/App Integration/AppFlow.svg
   abstract: true
 
 - name: AppFlow::ConnectorProfile
   subtitle: Connector Profile
+  icon: AWS/App Integration/AppFlow.svg
   abstract: true
 
 - name: AppFlow::Flow
   subtitle: Flow
+  icon: AWS/App Integration/AppFlow.svg
   abstract: true
 
 - name: AppIntegrations
   instanceOf: Service
-  style: dashed
+  abstract: true
+
+- name: AppIntegrations::DataIntegration
+  subtitle: Data Integration
   abstract: true
 
 - name: AppIntegrations::EventIntegration
@@ -390,7 +455,6 @@ resources:
 
 - name: AppMesh
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Networking/App-Mesh.svg
   abstract: true
@@ -404,7 +468,7 @@ resources:
 - name: AppMesh::Mesh
   subtitle: Mesh
   color: "#7747D4"
-  icon: AWS/Networking/App-Mesh.svg
+  icon: AWS/Networking/App-Mesh_Mesh.svg
   abstract: true
 
 - name: AppMesh::Route
@@ -416,65 +480,137 @@ resources:
 - name: AppMesh::VirtualGateway
   subtitle: Virtual Gateway
   color: "#7747D4"
-  icon: AWS/Networking/App-Mesh.svg
+  icon: AWS/Networking/App-Mesh_Virtual-Gateway.svg
   abstract: true
 
 - name: AppMesh::VirtualNode
   subtitle: Virtual Node
   color: "#7747D4"
-  icon: AWS/Networking/App-Mesh.svg
+  icon: AWS/Networking/App-Mesh_Virtual-Node.svg
   abstract: true
 
 - name: AppMesh::VirtualRouter
   subtitle: Virtual Router
   color: "#7747D4"
-  icon: AWS/Networking/App-Mesh.svg
+  icon: AWS/Networking/App-Mesh_Virtual-Router.svg
   abstract: true
 
 - name: AppMesh::VirtualService
   subtitle: Virtual Service
   color: "#7747D4"
-  icon: AWS/Networking/App-Mesh.svg
+  icon: AWS/Networking/App-Mesh_Virtual-Service.svg
   abstract: true
 
 - name: AppRunner
   instanceOf: Service
-  style: dashed
+  icon: AWS/Compute/App-Runner.svg
+  abstract: true
+
+- name: AppRunner::AutoScalingConfiguration
+  subtitle: Auto Scaling Configuration
+  icon: AWS/Compute/App-Runner.svg
+  abstract: true
+
+- name: AppRunner::ObservabilityConfiguration
+  subtitle: Observability Configuration
+  icon: AWS/Compute/App-Runner.svg
   abstract: true
 
 - name: AppRunner::Service
   subtitle: Service
+  icon: AWS/Compute/App-Runner.svg
+  abstract: true
+
+- name: AppRunner::VpcConnector
+  subtitle: Vpc Connector
+  icon: AWS/Compute/App-Runner.svg
+  abstract: true
+
+- name: AppRunner::VpcIngressConnection
+  subtitle: Vpc Ingress Connection
+  icon: AWS/Compute/App-Runner.svg
   abstract: true
 
 - name: AppStream
   instanceOf: Service
-  style: dashed
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::AppBlock
+  subtitle: App Block
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::AppBlockBuilder
+  subtitle: App Block Builder
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::Application
+  subtitle: Application
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::ApplicationEntitlementAssociation
+  subtitle: Application Entitlement Association
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::ApplicationFleetAssociation
+  subtitle: Application Fleet Association
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::AppBlock
+  subtitle: AppBlock
+  color: "#2E907B"
+  abstract: true
+
+- name: AppStream::Applicataion
+  subtitle: Application
   color: "#2E907B"
   abstract: true
 
 - name: AppStream::DirectoryConfig
   subtitle: Directory Config
   color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
+  abstract: true
+
+- name: AppStream::Entitlement
+  subtitle: Entitlement
+  color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
   abstract: true
 
 - name: AppStream::Fleet
   subtitle: Fleet
   color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
   abstract: true
 
 - name: AppStream::ImageBuilder
   subtitle: Image Builder
   color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
   abstract: true
 
 - name: AppStream::Stack
   subtitle: Stack
   color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
   abstract: true
 
 - name: AppStream::StackFleetAssociation
   subtitle: Stack Fleet Association
   color: "#2E907B"
+  icon: AWS/End User Computing/AppStream.svg
   abstract: true
 
 - name: AppStream::StackUserAssociation
@@ -491,75 +627,110 @@ resources:
 
 - name: AppSync
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::ApiCache
   subtitle: Api Cache
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::ApiKey
   subtitle: Api Key
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::DataSource
   subtitle: Data Source
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
+  abstract: true
+
+- name: AppSync::DomainName
+  subtitle: Domain Name
+  color: "#DE2D34"
+  icon: AWS/App Integration/AppSync.svg
+  abstract: true
+
+- name: AppSync::DomainNameApiAssociation
+  subtitle: Domain Name Api Association
+  color: "#DE2D34"
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::FunctionConfiguration
   subtitle: Function Configuration
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::GraphQLApi
   subtitle: Graph QL Api
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::GraphQLSchema
   subtitle: Graph QL Schema
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: AppSync::Resolver
   subtitle: Resolver
   color: "#DE2D34"
-  icon: AWS/Mobile/AppSync.svg
+  icon: AWS/App Integration/AppSync.svg
+  abstract: true
+
+- name: AppSync::SourceApiAssociation
+  subtitle: Source Api Association
+  color: "#DE2D34"
+  icon: AWS/App Integration/AppSync.svg
   abstract: true
 
 - name: ApplicationAutoScaling
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
-  icon: AWS/Compute/Application-Auto-Scaling.svg
+  icon: AWS/Mgmt & Gov/Application-Auto-Scaling.svg
   abstract: true
 
 - name: ApplicationAutoScaling::ScalableTarget
   subtitle: Scalable Target
   color: "#D82C6C"
-  icon: AWS/Compute/Application-Auto-Scaling.svg
+  icon: AWS/Mgmt & Gov/Application-Auto-Scaling.svg
   abstract: true
 
 - name: ApplicationAutoScaling::ScalingPolicy
   subtitle: Scaling Policy
   color: "#D82C6C"
-  icon: AWS/Compute/Application-Auto-Scaling.svg
+  icon: AWS/Mgmt & Gov/Application-Auto-Scaling.svg
+  abstract: true
+
+- name: ApplicationInsights
+  instanceOf: Service
+  abstract: true
+
+- name: ApplicationInsights::Application
+  subtitle: Application
   abstract: true
 
 - name: Athena
   instanceOf: Service
-  style: dashed
+  color: "#7747D4"
+  icon: AWS/Analytics/Athena.svg
+  abstract: true
+
+- name: Athena::CapacityReservation
+  subtitle: Capacity Reservation
+  color: "#7747D4"
+  icon: AWS/Analytics/Athena.svg
+  abstract: true
+
+- name: Athena::CapacityReservation
+  subtitle: Capacity Reservation
   color: "#7747D4"
   icon: AWS/Analytics/Athena.svg
   abstract: true
@@ -590,16 +761,16 @@ resources:
 
 - name: AuditManager
   instanceOf: Service
-  style: dashed
+  icon: AWS/SIC/Audit-Manager.svg
   abstract: true
 
 - name: AuditManager::Assessment
   subtitle: Assessment
+  icon: AWS/SIC/Audit-Manager.svg
   abstract: true
 
 - name: AutoScaling
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/_Group Icons/Auto-Scaling.svg
   abstract: true
@@ -642,7 +813,6 @@ resources:
 
 - name: AutoScalingPlans
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -651,9 +821,28 @@ resources:
   color: "#D82C6C"
   abstract: true
 
+- name: B2BI
+  instanceOf: Service
+  abstract: true
+
+- name: B2BI::Capability
+  subtitle: Capability
+  abstract: true
+
+- name: B2BI::Partnership
+  subtitle: Partnership
+  abstract: true
+
+- name: B2BI::Profile
+  subtitle: Profile
+  abstract: true
+
+- name: B2BI::Transformer
+  subtitle: Transformer
+  abstract: true
+
 - name: Backup
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/Storage/Backup.svg
   abstract: true
@@ -661,7 +850,7 @@ resources:
 - name: Backup::BackupPlan
   subtitle: Backup Plan
   color: "#448A27"
-  icon: AWS/Storage/Backup.svg
+  icon: AWS/Storage/Backup_Backup-Plan.svg
   abstract: true
 
 - name: Backup::BackupSelection
@@ -673,12 +862,43 @@ resources:
 - name: Backup::BackupVault
   subtitle: Backup Vault
   color: "#448A27"
+  icon: AWS/Storage/Backup_Backup-Vault.svg
+  abstract: true
+
+- name: Backup::Framework
+  subtitle: Framework
+  color: "#448A27"
   icon: AWS/Storage/Backup.svg
+  abstract: true
+
+- name: Backup::ReportPlan
+  subtitle: Report Plan
+  color: "#448A27"
+  icon: AWS/Storage/Backup.svg
+  abstract: true
+
+- name: Backup::RestoreTestingPlan
+  subtitle: Restore Testing Plan
+  color: "#448A27"
+  icon: AWS/Storage/Backup.svg
+  abstract: true
+
+- name: Backup::RestoreTestingPlan
+  subtitle: Restore Testing Plan
+  color: "#448A27"
+  icon: AWS/Storage/Backup.svg
+  abstract: true
+
+- name: BackupGateway
+  instanceOf: Service
+  abstract: true
+
+- name: BackupGateway::Hypervisor
+  subtitle: Hypervisor
   abstract: true
 
 - name: Batch
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Batch.svg
   abstract: true
@@ -701,9 +921,44 @@ resources:
   icon: AWS/Compute/Batch.svg
   abstract: true
 
+- name: Batch::SchedulingPolicy
+  subtitle: Scheduling Policy
+  color: "#E4750E"
+  icon: AWS/Compute/Batch.svg
+  abstract: true
+
+- name: BillingConductor
+  instanceOf: Service
+  color: "#448A27"
+  icon: AWS/Cost Mgmt/Billing-Conductor.svg
+  abstract: true
+
+- name: BillingConductor::BillingGroup
+  subtitle: Billing Group
+  color: "#448A27"
+  icon: AWS/Cost Mgmt/Billing-Conductor.svg
+  abstract: true
+
+- name: BillingConductor::CustomLineItem
+  subtitle: Custom Line Item
+  color: "#448A27"
+  icon: AWS/Cost Mgmt/Billing-Conductor.svg
+  abstract: true
+
+- name: BillingConductor::PricingPlan
+  subtitle: Pricing Plan
+  color: "#448A27"
+  icon: AWS/Cost Mgmt/Billing-Conductor.svg
+  abstract: true
+
+- name: BillingConductor::PricingRule
+  subtitle: Pricing Rule
+  color: "#448A27"
+  icon: AWS/Cost Mgmt/Billing-Conductor.svg
+  abstract: true
+
 - name: Budgets
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/Cost Mgmt/Budgets.svg
   abstract: true
@@ -722,7 +977,6 @@ resources:
 
 - name: CE
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   abstract: true
 
@@ -743,7 +997,6 @@ resources:
 
 - name: CUR
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: CUR::ReportDefinition
@@ -752,7 +1005,6 @@ resources:
 
 - name: Cassandra
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   abstract: true
 
@@ -768,7 +1020,6 @@ resources:
 
 - name: CertificateManager
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Certificate-Manager.svg
   abstract: true
@@ -787,18 +1038,60 @@ resources:
 
 - name: Chatbot
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Chatbot.svg
+  abstract: true
+
+- name: Chatbot::MicrosoftTeamsChannelConfiguration
+  subtitle: Microsoft Teams Channel Configuration
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Chatbot.svg
   abstract: true
 
 - name: Chatbot::SlackChannelConfiguration
   subtitle: Slack Channel Configuration
   color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Chatbot.svg
+  abstract: true
+
+- name: CleanRooms
+  instanceOf: Service
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
+  abstract: true
+
+- name: CleanRooms::AnalysisTemplate
+  subtitle: Analysis Template
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
+  abstract: true
+
+- name: CleanRooms::Collaboration
+  subtitle: Collaboration
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
+  abstract: true
+
+- name: CleanRooms::ConfiguredTable
+  subtitle: Configured Table
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
+  abstract: true
+
+- name: CleanRooms::ConfiguredTableAssociation
+  subtitle: Configured Table Association
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
+  abstract: true
+
+- name: CleanRooms::Membership
+  subtitle: Membership
+  color: "#7747D4"
+  icon: AWS/Analytics/Clean-Rooms.svg
   abstract: true
 
 - name: Cloud9
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/Cloud9.svg
   abstract: true
@@ -811,13 +1104,30 @@ resources:
 
 - name: CloudFormation
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudFormation.svg
   abstract: true
 
 - name: CloudFormation::CustomResource
   subtitle: Custom Resource
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudFormation.svg
+  abstract: true
+
+- name: CloudFormation::HookDefaultVersion
+  subtitle: Hook Default Version
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudFormation.svg
+  abstract: true
+
+- name: CloudFormation::HookTypeConfig
+  subtitle: Hook Type Config
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudFormation.svg
+  abstract: true
+
+- name: CloudFormation::HookVersion
+  subtitle: Hook Version
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudFormation.svg
   abstract: true
@@ -896,7 +1206,6 @@ resources:
 
 - name: CloudFront
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Networking/CloudFront.svg
   abstract: true
@@ -909,6 +1218,12 @@ resources:
 
 - name: CloudFront::CloudFrontOriginAccessIdentity
   subtitle: Cloud Front Origin Access Identity
+  color: "#7747D4"
+  icon: AWS/Networking/CloudFront.svg
+  abstract: true
+
+- name: CloudFront::ContinuousDeploymentPolicy
+  subtitle: Continuous Deployment Policy
   color: "#7747D4"
   icon: AWS/Networking/CloudFront.svg
   abstract: true
@@ -931,6 +1246,24 @@ resources:
   icon: AWS/Networking/CloudFront.svg
   abstract: true
 
+- name: CloudFront::KeyValueStore
+  subtitle: Key Value Store
+  color: "#7747D4"
+  icon: AWS/Networking/CloudFront.svg
+  abstract: true
+
+- name: CloudFront::MonitoringSubscription
+  subtitle: Monitoring Subscription
+  color: "#7747D4"
+  icon: AWS/Networking/CloudFront.svg
+  abstract: true
+
+- name: CloudFront::OriginAccessControl
+  subtitle: Origin Access Control
+  color: "#7747D4"
+  icon: AWS/Networking/CloudFront.svg
+  abstract: true
+
 - name: CloudFront::OriginRequestPolicy
   subtitle: Origin Request Policy
   color: "#7747D4"
@@ -949,6 +1282,12 @@ resources:
   icon: AWS/Networking/CloudFront.svg
   abstract: true
 
+- name: CloudFront::ResponseHeadersPolicy
+  subtitle: Response Headers Policy
+  color: "#7747D4"
+  icon: AWS/Networking/CloudFront.svg
+  abstract: true
+
 - name: CloudFront::StreamingDistribution
   subtitle: Streaming Distribution
   color: "#7747D4"
@@ -957,7 +1296,24 @@ resources:
 
 - name: CloudTrail
   instanceOf: Service
-  style: dashed
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudTrail.svg
+  abstract: true
+
+- name: CloudTrail::Channel
+  subtitle: Channel
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudTrail.svg
+  abstract: true
+
+- name: CloudTrail::EventDataStore
+  subtitle: Event Data Store
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudTrail.svg
+  abstract: true
+
+- name: CloudTrail::ResourcePolicy
+  subtitle: Resource Policy
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudTrail.svg
   abstract: true
@@ -970,7 +1326,6 @@ resources:
 
 - name: CloudWatch
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudWatch.svg
   abstract: true
@@ -1013,29 +1368,30 @@ resources:
 
 - name: CodeArtifact
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
+  icon: AWS/Dev Tools/CodeArtifact.svg
   abstract: true
 
 - name: CodeArtifact::Domain
   subtitle: Domain
   color: "#4053D6"
+  icon: AWS/Dev Tools/CodeArtifact.svg
   abstract: true
 
 - name: CodeArtifact::Repository
   subtitle: Repository
   color: "#4053D6"
+  icon: AWS/Dev Tools/CodeArtifact.svg
   abstract: true
 
 - name: CodeBuild
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeBuild.svg
   abstract: true
 
-- name: CodeBuild::Project
-  subtitle: Project
+- name: CodeBuild::Fleet
+  subtitle: Fleet
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeBuild.svg
   abstract: true
@@ -1072,7 +1428,6 @@ resources:
 
 - name: CodeCommit
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeCommit.svg
   abstract: true
@@ -1085,7 +1440,6 @@ resources:
 
 - name: CodeDeploy
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeDeploy.svg
   abstract: true
@@ -1110,7 +1464,6 @@ resources:
 
 - name: CodeGuruProfiler
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -1121,7 +1474,6 @@ resources:
 
 - name: CodeGuruReviewer
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -1132,7 +1484,6 @@ resources:
 
 - name: CodePipeline
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodePipeline.svg
   abstract: true
@@ -1157,7 +1508,6 @@ resources:
 
 - name: CodeStar
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeStar.svg
   abstract: true
@@ -1170,20 +1520,30 @@ resources:
 
 - name: CodeStarConnections
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Dev Tools/CodeStar.svg
   abstract: true
 
 - name: CodeStarConnections::Connection
   subtitle: Connection
   color: "#4053D6"
-  icon: AWS/Mgmt & Gov/Config.svg
+  icon: AWS/Dev Tools/CodeStar.svg
+  abstract: true
+
+- name: CodeStarConnections::RepositoryLink
+  subtitle: Repository Link
+  color: "#4053D6"
+  icon: AWS/Dev Tools/CodeStar.svg
+  abstract: true
+
+- name: CodeStarConnections::SyncConfiguration
+  subtitle: Sync Configuration
+  color: "#4053D6"
+  icon: AWS/Dev Tools/CodeStar.svg
   abstract: true
 
 - name: CodeStarNotifications
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/CodeStar.svg
   abstract: true
@@ -1196,7 +1556,6 @@ resources:
 
 - name: Cognito
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Cognito.svg
   abstract: true
@@ -1207,8 +1566,20 @@ resources:
   icon: AWS/SIC/Cognito.svg
   abstract: true
 
+- name: Cognito::IdentityPoolPrincipalTag
+  subtitle: Identity Pool Principal Tag
+  color: "#DE2D34"
+  icon: AWS/SIC/Cognito.svg
+  abstract: true
+
 - name: Cognito::IdentityPoolRoleAttachment
   subtitle: Identity Pool Role Attachment
+  color: "#DE2D34"
+  icon: AWS/SIC/Cognito.svg
+  abstract: true
+
+- name: Cognito::LogDeliveryConfiguration
+  subtitle: Log Delivery Configuration
   color: "#DE2D34"
   icon: AWS/SIC/Cognito.svg
   abstract: true
@@ -1273,9 +1644,26 @@ resources:
   icon: AWS/SIC/Cognito.svg
   abstract: true
 
+- name: Comprehend
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Comprehend.svg
+  abstract: true
+
+- name: Comprehend::DocumentClassifier
+  subtitle: Document Classifier
+  color: "#2E907B"
+  icon: AWS/ML/Comprehend.svg
+  abstract: true
+
+- name: Comprehend::Flywheel
+  subtitle: Flywheel
+  color: "#2E907B"
+  icon: AWS/ML/Comprehend.svg
+  abstract: true
+
 - name: Config
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Config.svg
   abstract: true
@@ -1342,24 +1730,188 @@ resources:
 
 - name: Connect
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Connect.svg
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::ApprovedOrigin
+  subtitle: Approved Origin
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::ContactFlow
+  subtitle: Contact Flow
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::ContactFlowModule
+  subtitle: Contact Flow Module
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::EvaluationForm
+  subtitle: Evaluation Form
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::HoursOfOperation
+  subtitle: Hours Of Operation
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::Instance
+  subtitle: Instance
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::InstanceStorageConfig
+  subtitle: Instance Storage Config
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::IntegrationAssociation
+  subtitle: Integration Association
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::PhoneNumber
+  subtitle: Phone Number
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::PredefinedAttribute
+  subtitle: Predefined Attribute
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::Prompt
+  subtitle: Prompt
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::Queue
+  subtitle: Queue
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
   abstract: true
 
 - name: Connect::QuickConnect
   subtitle: Quick Connect
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Connect.svg
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::RoutingProfile
+  subtitle: Routing Profile
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::Rule
+  subtitle: Rule
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::SecurityKey
+  subtitle: Security Key
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::TaskTemplate
+  subtitle: Task Template
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::TrafficDistributionGroup
+  subtitle: Traffic Distribution Group
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::User
+  subtitle: User
+  color: "#DE2D34"
+  icon: AWS/_General/User.svg
+  abstract: true
+
+- name: Connect::UserHierarchyGroup
+  subtitle: User Hierarchy Group
+  color: "#DE2D34"
+  icon: AWS/_General/User.svg
+  abstract: true
+
+- name: Connect::View
+  subtitle: View
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: Connect::ViewVersion
+  subtitle: View Version
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Connect.svg
+  abstract: true
+
+- name: ConnectCampaigns
+  instanceOf: Service
+  abstract: true
+
+- name: ConnectCampaigns::Campaign
+  subtitle: Campaign
+  abstract: true
+
+- name: ControlTower
+  instanceOf: Service
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Control-Tower.svg
+  abstract: true
+
+- name: ControlTower::EnabledBaseline
+  subtitle: Enabled Baseline
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Control-Tower.svg
+  abstract: true
+
+- name: ControlTower::EnabledControl
+  subtitle: Enabled Control
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Control-Tower.svg
+  abstract: true
+
+- name: ControlTower::LandingZone
+  subtitle: Landing Zone
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Control-Tower.svg
   abstract: true
 
 - name: CustomerProfiles
   instanceOf: Service
-  style: dashed
+  abstract: true
+
+- name: CustomerProfiles::CalculatedAttributeDefinition
+  subtitle: Calculated Attribute Definition
   abstract: true
 
 - name: CustomerProfiles::Domain
   subtitle: Domain
+  abstract: true
+
+- name: CustomerProfiles::EventStream
+  subtitle: Event Stream
   abstract: true
 
 - name: CustomerProfiles::Integration
@@ -1372,7 +1924,6 @@ resources:
 
 - name: DAX
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/DynamoDB_DAX.svg
   abstract: true
@@ -1397,7 +1948,6 @@ resources:
 
 - name: DLM
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: DLM::LifecyclePolicy
@@ -1406,12 +1956,16 @@ resources:
 
 - name: DMS
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
 - name: DMS::Certificate
   subtitle: Certificate
+  color: "#2E907B"
+  abstract: true
+
+- name: DMS::DataProvider
+  subtitle: Data Provider
   color: "#2E907B"
   abstract: true
 
@@ -1422,6 +1976,21 @@ resources:
 
 - name: DMS::EventSubscription
   subtitle: Event Subscription
+  color: "#2E907B"
+  abstract: true
+
+- name: DMS::InstanceProfile
+  subtitle: Instance Profile
+  color: "#2E907B"
+  abstract: true
+
+- name: DMS::MigrationProject
+  subtitle: Migration Project
+  color: "#2E907B"
+  abstract: true
+
+- name: DMS::ReplicationConfig
+  subtitle: Replication Config
   color: "#2E907B"
   abstract: true
 
@@ -1442,7 +2011,6 @@ resources:
 
 - name: DataBrew
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   abstract: true
 
@@ -1466,6 +2034,11 @@ resources:
   color: "#7747D4"
   abstract: true
 
+- name: DataBrew::Ruleset
+  subtitle: Ruleset
+  color: "#7747D4"
+  abstract: true
+
 - name: DataBrew::Schedule
   subtitle: Schedule
   color: "#7747D4"
@@ -1473,7 +2046,6 @@ resources:
 
 - name: DataPipeline
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Data-Pipeline.svg
   abstract: true
@@ -1486,7 +2058,6 @@ resources:
 
 - name: DataSync
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
@@ -1494,7 +2065,13 @@ resources:
 - name: DataSync::Agent
   subtitle: Agent
   color: "#2E907B"
-  icon: AWS/Migration & Transfer/DataSync_Agent.svg
+  icon: AWS/Migration & Transfer/Datasync_Agent.svg
+  abstract: true
+
+- name: DataSync::LocationAzureBlob
+  subtitle: Location Azure Blob
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
 
 - name: DataSync::LocationEFS
@@ -1503,8 +2080,32 @@ resources:
   icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
 
+- name: DataSync::LocationFSxLustre
+  subtitle: Location F Sx Lustre
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
+  abstract: true
+
+- name: DataSync::LocationFSxONTAP
+  subtitle: Location F Sx ONTAP
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
+  abstract: true
+
+- name: DataSync::LocationFSxOpenZFS
+  subtitle: Location F Sx Open ZFS
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
+  abstract: true
+
 - name: DataSync::LocationFSxWindows
   subtitle: Location F Sx Windows
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
+  abstract: true
+
+- name: DataSync::LocationHDFS
+  subtitle: Location HDFS
   color: "#2E907B"
   icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
@@ -1533,47 +2134,158 @@ resources:
   icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
 
+- name: DataSync::StorageSystem
+  subtitle: Storage System
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/DataSync.svg
+  abstract: true
+
 - name: DataSync::Task
   subtitle: Task
   color: "#2E907B"
   icon: AWS/Migration & Transfer/DataSync.svg
   abstract: true
 
+- name: DataZone
+  instanceOf: Service
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::DataSource
+  subtitle: Data Source
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::Domain
+  subtitle: Domain
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::Environment
+  subtitle: Environment
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::EnvironmentBlueprintConfiguration
+  subtitle: Environment Blueprint Configuration
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::EnvironmentProfile
+  subtitle: Environment Profile
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::Project
+  subtitle: Project
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
+- name: DataZone::SubscriptionTarget
+  subtitle: Subscription Target
+  color: "#7747D4"
+  icon: AWS/Analytics/DataZone.svg
+  abstract: true
+
 - name: Detective
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
+  icon: AWS/SIC/Detective.svg
   abstract: true
 
 - name: Detective::Graph
   subtitle: Graph
   color: "#DE2D34"
+  icon: AWS/SIC/Detective.svg
   abstract: true
 
 - name: Detective::MemberInvitation
   subtitle: Member Invitation
   color: "#DE2D34"
+  icon: AWS/SIC/Detective.svg
+  abstract: true
+
+- name: Detective::OrganizationAdmin
+  subtitle: Organization Admin
+  color: "#DE2D34"
+  icon: AWS/SIC/Detective.svg
   abstract: true
 
 - name: DevOpsGuru
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
+  icon: AWS/ML/DevOps-Guru.svg
+  abstract: true
+
+- name: DevOpsGuru::LogAnomalyDetectionIntegration
+  subtitle: Log Anomaly Detection Integration
+  color: "#2E907B"
+  icon: AWS/ML/DevOps-Guru.svg
   abstract: true
 
 - name: DevOpsGuru::NotificationChannel
   subtitle: Notification Channel
   color: "#2E907B"
+  icon: AWS/ML/DevOps-Guru.svg
   abstract: true
 
 - name: DevOpsGuru::ResourceCollection
   subtitle: Resource Collection
   color: "#2E907B"
+  icon: AWS/ML/DevOps-Guru.svg
+  abstract: true
+
+- name: DeviceFarm
+  instanceOf: Service
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::DevicePool
+  subtitle: Device Pool
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::InstanceProfile
+  subtitle: Instance Profile
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::NetworkProfile
+  subtitle: Network Profile
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::Project
+  subtitle: Project
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::TestGridProject
+  subtitle: Test Grid Project
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
+  abstract: true
+
+- name: DeviceFarm::VPCEConfiguration
+  subtitle: VPCE Configuration
+  color: "#DE2D34"
+  icon: AWS/Front End/Device-Farm.svg
   abstract: true
 
 - name: DirectoryService
   instanceOf: Service
-  style: dashed
   icon: AWS/SIC/Directory-Service.svg
   abstract: true
 
@@ -1584,12 +2296,11 @@ resources:
 
 - name: DirectoryService::SimpleAD
   subtitle: Simple AD
-  icon: AWS/SIC/Directory-Service.svg
+  icon: AWS/SIC/Directory-Service_Simple-AD.svg
   abstract: true
 
 - name: DocDB
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/DocumentDB-with-MongoDB-compatibility.svg
   abstract: true
@@ -1618,9 +2329,16 @@ resources:
   icon: AWS/Database/DocumentDB-with-MongoDB-compatibility.svg
   abstract: true
 
+- name: DocDBElastic
+  instanceOf: Service
+  abstract: true
+
+- name: DocDBElastic::Cluster
+  subtitle: Cluster
+  abstract: true
+
 - name: DynamoDB
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/DynamoDB.svg
   abstract: true
@@ -1628,7 +2346,7 @@ resources:
 - name: DynamoDB::GlobalTable
   subtitle: Global Table
   color: "#4053D6"
-  icon: AWS/Database/DynamoDB_Table.svg
+  icon: AWS/Database/DynamoDB.svg
   abstract: true
 
 - name: DynamoDB::Table
@@ -1639,13 +2357,18 @@ resources:
 
 - name: EC2
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::CapacityReservation
   subtitle: Capacity Reservation
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::CapacityReservationFleet
+  subtitle: Capacity Reservation Fleet
   color: "#E4750E"
   icon: AWS/Compute/EC2.svg
   abstract: true
@@ -1740,16 +2463,70 @@ resources:
   icon: AWS/Compute/EC2.svg
   abstract: true
 
+- name: EC2::IPAM
+  subtitle: IPAM
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMAllocation
+  subtitle: IPAM Allocation
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMPool
+  subtitle: IPAM Pool
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMPoolCidr
+  subtitle: IPAM Pool Cidr
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMResourceDiscovery
+  subtitle: IPAM Resource Discovery
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMResourceDiscoveryAssociation
+  subtitle: IPAM Resource Discovery Association
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::IPAMScope
+  subtitle: IPAM Scope
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
 - name: EC2::Instance
   subtitle: Instance
   color: "#E4750E"
   icon: AWS/Compute/Instances/EC2_Instance.svg
   abstract: true
 
+- name: EC2::InstanceConnectEndpoint
+  subtitle: Instance Connect Endpoint
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
 - name: EC2::InternetGateway
   subtitle: Internet Gateway
   color: "#E4750E"
   icon: AWS/Networking/VPC_Internet-Gateway.svg
+  abstract: true
+
+- name: EC2::KeyPair
+  subtitle: Key Pair
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::LaunchTemplate
@@ -1764,10 +2541,22 @@ resources:
   icon: AWS/Networking/VPC_Internet-Gateway.svg
   abstract: true
 
+- name: EC2::LocalGatewayRouteTable
+  subtitle: Local Gateway Route Table
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
 - name: EC2::LocalGatewayRouteTableVPCAssociation
   subtitle: Local Gateway Route Table VPC Association
   color: "#E4750E"
   icon: AWS/Networking/VPC_Internet-Gateway.svg
+  abstract: true
+
+- name: EC2::LocalGatewayRouteTableVirtualInterfaceGroupAssociation
+  subtitle: Local Gateway Route Table Virtual Interface Group Association
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::NatGateway
@@ -1786,6 +2575,18 @@ resources:
   subtitle: Network Acl Entry
   color: "#E4750E"
   icon: AWS/Networking/VPC_Network-Access-Control-List.svg
+  abstract: true
+
+- name: EC2::NetworkInsightsAccessScope
+  subtitle: Network Insights Access Scope
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::NetworkInsightsAccessScopeAnalysis
+  subtitle: Network Insights Access Scope Analysis
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::NetworkInsightsAnalysis
@@ -1816,6 +2617,12 @@ resources:
   subtitle: Network Interface Permission
   color: "#E4750E"
   icon: AWS/Networking/VPC_Elastic-Network-Interface.svg
+  abstract: true
+
+- name: EC2::NetworkPerformanceMetricSubscription
+  subtitle: Network Performance Metric Subscription
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::PlacementGroup
@@ -1893,25 +2700,25 @@ resources:
 - name: EC2::TrafficMirrorFilter
   subtitle: Traffic Mirror Filter
   color: "#E4750E"
-  icon: AWS/Networking/VPC-Traffic-Mirroring.svg
+  icon: AWS/Networking/VPC_Traffic-Mirroring.svg
   abstract: true
 
 - name: EC2::TrafficMirrorFilterRule
   subtitle: Traffic Mirror Filter Rule
   color: "#E4750E"
-  icon: AWS/Networking/VPC-Traffic-Mirroring.svg
+  icon: AWS/Networking/VPC_Traffic-Mirroring.svg
   abstract: true
 
 - name: EC2::TrafficMirrorSession
   subtitle: Traffic Mirror Session
   color: "#E4750E"
-  icon: AWS/Networking/VPC-Traffic-Mirroring.svg
+  icon: AWS/Networking/VPC_Traffic-Mirroring.svg
   abstract: true
 
 - name: EC2::TrafficMirrorTarget
   subtitle: Traffic Mirror Target
   color: "#E4750E"
-  icon: AWS/Networking/VPC-Traffic-Mirroring.svg
+  icon: AWS/Networking/VPC_Traffic-Mirroring.svg
   abstract: true
 
 - name: EC2::TransitGateway
@@ -1984,6 +2791,12 @@ resources:
   subtitle: Transit Gateway Route Table Propagation
   color: "#E4750E"
   icon: AWS/Networking/Transit-Gateway.svg
+  abstract: true
+
+- name: EC2::TransitGatewayVpcAttachment
+  subtitle: Transit Gateway Vpc Attachment
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
   abstract: true
 
 - name: EC2::VPC
@@ -2064,6 +2877,30 @@ resources:
   icon: AWS/Networking/Client-VPN.svg
   abstract: true
 
+- name: EC2::VerifiedAccessEndpoint
+  subtitle: Verified Access Endpoint
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::VerifiedAccessGroup
+  subtitle: Verified Access Group
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::VerifiedAccessInstance
+  subtitle: Verified Access Instance
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
+- name: EC2::VerifiedAccessTrustProvider
+  subtitle: Verified Access Trust Provider
+  color: "#E4750E"
+  icon: AWS/Compute/EC2.svg
+  abstract: true
+
 - name: EC2::Volume
   subtitle: Volume
   color: "#E4750E"
@@ -2078,45 +2915,60 @@ resources:
 
 - name: ECR
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
   abstract: true
 
 - name: ECR::PublicRepository
   subtitle: Public Repository
   color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
+  abstract: true
+
+- name: ECR::PullThroughCacheRule
+  subtitle: Pull Through Cache Rule
+  color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
   abstract: true
 
 - name: ECR::RegistryPolicy
   subtitle: Registry Policy
   color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
   abstract: true
 
 - name: ECR::ReplicationConfiguration
   subtitle: Replication Configuration
   color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
   abstract: true
 
 - name: ECR::Repository
   subtitle: Repository
   color: "#E4750E"
+  icon: AWS/Containers/ECR.svg
   abstract: true
 
 - name: ECS
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: ECS::CapacityProvider
   subtitle: Capacity Provider
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: ECS::Cluster
   subtitle: Cluster
+  color: "#E4750E"
+  icon: AWS/Containers/ECS.svg
+  abstract: true
+
+- name: ECS::ContainerInstance
+  subtitle: Container Instance
   color: "#E4750E"
   icon: AWS/Compute/ECS.svg
   abstract: true
@@ -2124,36 +2976,41 @@ resources:
 - name: ECS::ClusterCapacityProviderAssociations
   subtitle: Cluster Capacity Provider Associations
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: ECS::PrimaryTaskSet
   subtitle: Primary Task Set
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: ECS::Service
   subtitle: Service
   color: "#E4750E"
-  icon: AWS/Compute/ECS_Service.svg
+  icon: AWS/Containers/ECS_Service.svg
+  abstract: true
+
+- name: ECS::Task
+  subtitle: Task
+  color: "#E4750E"
+  icon: AWS/Compute/ECS.svg
   abstract: true
 
 - name: ECS::TaskDefinition
   subtitle: Task Definition
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: ECS::TaskSet
   subtitle: Task Set
   color: "#E4750E"
-  icon: AWS/Compute/ECS.svg
+  icon: AWS/Containers/ECS.svg
   abstract: true
 
 - name: EFS
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/Storage/EFS.svg
   abstract: true
@@ -2167,7 +3024,7 @@ resources:
 - name: EFS::FileSystem
   subtitle: File System
   color: "#448A27"
-  icon: AWS/Storage/EFS_File-system.svg
+  icon: AWS/Storage/EFS_File-System.svg
   abstract: true
 
 - name: EFS::MountTarget
@@ -2178,38 +3035,54 @@ resources:
 
 - name: EKS
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
-  icon: AWS/Compute/Elastic-Kubernetes-Service.svg
+  icon: AWS/Containers/EKS.svg
+  abstract: true
+
+- name: EKS::AccessEntry
+  subtitle: Access Entry
+  color: "#E4750E"
+  icon: AWS/Containers/EKS.svg
   abstract: true
 
 - name: EKS::Addon
   subtitle: Addon
   color: "#E4750E"
-  icon: AWS/Compute/Elastic-Kubernetes-Service.svg
+  icon: AWS/Containers/EKS.svg
   abstract: true
 
 - name: EKS::Cluster
   subtitle: Cluster
   color: "#E4750E"
-  icon: AWS/Compute/Elastic-Kubernetes-Service.svg
+  icon: AWS/Containers/EKS.svg
   abstract: true
 
 - name: EKS::FargateProfile
   subtitle: Fargate Profile
   color: "#E4750E"
-  icon: AWS/Compute/Elastic-Kubernetes-Service.svg
+  icon: AWS/Containers/Fargate.svg
+  abstract: true
+
+- name: EKS::IdentityProviderConfig
+  subtitle: Identity Provider Config
+  color: "#E4750E"
+  icon: AWS/Containers/EKS.svg
   abstract: true
 
 - name: EKS::Nodegroup
   subtitle: Nodegroup
   color: "#E4750E"
-  icon: AWS/Compute/Elastic-Kubernetes-Service.svg
+  icon: AWS/Containers/EKS.svg
+  abstract: true
+
+- name: EKS::PodIdentityAssociation
+  subtitle: Pod Identity Association
+  color: "#E4750E"
+  icon: AWS/Containers/EKS.svg
   abstract: true
 
 - name: EMR
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/EMR.svg
   abstract: true
@@ -2256,9 +3129,14 @@ resources:
   icon: AWS/Analytics/EMR.svg
   abstract: true
 
+- name: EMR::WALWorkspace
+  subtitle: WAL Workspace
+  color: "#7747D4"
+  icon: AWS/Analytics/EMR.svg
+  abstract: true
+
 - name: EMRContainers
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   abstract: true
 
@@ -2267,9 +3145,20 @@ resources:
   color: "#7747D4"
   abstract: true
 
+- name: EMRServerless
+  instanceOf: Service
+  abstract: true
+
+- name: EMRServerless::Application
+  subtitle: Application
+  abstract: true
+
+- name: EMRServerless::Application
+  subtitle: Application
+  abstract: true
+
 - name: ElastiCache
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/ElastiCache.svg
   abstract: true
@@ -2310,6 +3199,12 @@ resources:
   icon: AWS/Database/ElastiCache.svg
   abstract: true
 
+- name: ElastiCache::ServerlessCache
+  subtitle: Serverless Cache
+  color: "#4053D6"
+  icon: AWS/Database/ElastiCache.svg
+  abstract: true
+
 - name: ElastiCache::SubnetGroup
   subtitle: Subnet Group
   color: "#4053D6"
@@ -2330,7 +3225,6 @@ resources:
 
 - name: ElasticBeanstalk
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Elastic-Beanstalk.svg
   abstract: true
@@ -2361,7 +3255,6 @@ resources:
 
 - name: ElasticLoadBalancing
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Networking/ELB.svg
   abstract: true
@@ -2374,7 +3267,6 @@ resources:
 
 - name: ElasticLoadBalancingV2
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Networking/ELB.svg
   abstract: true
@@ -2409,9 +3301,20 @@ resources:
   icon: AWS/Networking/ELB.svg
   abstract: true
 
+- name: ElasticLoadBalancingV2::TrustStore
+  subtitle: Trust Store
+  color: "#E4750E"
+  icon: AWS/Networking/ELB.svg
+  abstract: true
+
+- name: ElasticLoadBalancingV2::TrustStoreRevocation
+  subtitle: Trust Store Revocation
+  color: "#E4750E"
+  icon: AWS/Networking/ELB.svg
+  abstract: true
+
 - name: Elasticsearch
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Elasticsearch-Service.svg
   abstract: true
@@ -2422,9 +3325,32 @@ resources:
   icon: AWS/Analytics/Elasticsearch-Service.svg
   abstract: true
 
+- name: EntityResolution
+  instanceOf: Service
+  color: "#7747D4"
+  icon: AWS/Analytics/Entity-Resolution.svg
+  abstract: true
+
+- name: EntityResolution::IdMappingWorkflow
+  subtitle: Id Mapping Workflow
+  color: "#7747D4"
+  icon: AWS/Analytics/Entity-Resolution.svg
+  abstract: true
+
+- name: EntityResolution::MatchingWorkflow
+  subtitle: Matching Workflow
+  color: "#7747D4"
+  icon: AWS/Analytics/Entity-Resolution.svg
+  abstract: true
+
+- name: EntityResolution::SchemaMapping
+  subtitle: Schema Mapping
+  color: "#7747D4"
+  icon: AWS/Analytics/Entity-Resolution.svg
+  abstract: true
+
 - name: EventSchemas
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: EventSchemas::Discoverer
@@ -2445,7 +3371,6 @@ resources:
 
 - name: Events
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: Events::ApiDestination
@@ -2460,6 +3385,10 @@ resources:
   subtitle: Connection
   abstract: true
 
+- name: Events::Endpoint
+  subtitle: Endpoint
+  abstract: true
+
 - name: Events::EventBus
   subtitle: Event Bus
   abstract: true
@@ -2472,9 +3401,32 @@ resources:
   subtitle: Rule
   abstract: true
 
+- name: Evidently
+  instanceOf: Service
+  abstract: true
+
+- name: Evidently::Experiment
+  subtitle: Experiment
+  abstract: true
+
+- name: Evidently::Feature
+  subtitle: Feature
+  abstract: true
+
+- name: Evidently::Launch
+  subtitle: Launch
+  abstract: true
+
+- name: Evidently::Project
+  subtitle: Project
+  abstract: true
+
+- name: Evidently::Segment
+  subtitle: Segment
+  abstract: true
+
 - name: FIS
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -2483,9 +3435,13 @@ resources:
   color: "#D82C6C"
   abstract: true
 
+- name: FIS::TargetAccountConfiguration
+  subtitle: Target Account Configuration
+  color: "#D82C6C"
+  abstract: true
+
 - name: FMS
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   abstract: true
 
@@ -2499,9 +3455,19 @@ resources:
   color: "#DE2D34"
   abstract: true
 
+- name: FMS::ResourceSet
+  subtitle: Resource Set
+  color: "#DE2D34"
+  abstract: true
+
 - name: FSx
   instanceOf: Service
-  style: dashed
+  color: "#448A27"
+  icon: AWS/Storage/FSx.svg
+  abstract: true
+
+- name: FSx::DataRepositoryAssociation
+  subtitle: Data Repository Association
   color: "#448A27"
   icon: AWS/Storage/FSx.svg
   abstract: true
@@ -2514,109 +3480,144 @@ resources:
 
 - name: FinSpace
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
+  icon: AWS/Analytics/FinSpace.svg
   abstract: true
 
 - name: FinSpace::Environment
   subtitle: Environment
   color: "#7747D4"
+  icon: AWS/Analytics/FinSpace.svg
+  abstract: true
+
+- name: Forecast
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Forecast.svg
+  abstract: true
+
+- name: Forecast::Dataset
+  subtitle: Dataset
+  color: "#2E907B"
+  icon: AWS/ML/Forecast.svg
+  abstract: true
+
+- name: Forecast::DatasetGroup
+  subtitle: Dataset Group
+  color: "#2E907B"
+  icon: AWS/ML/Forecast.svg
   abstract: true
 
 - name: FraudDetector
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::Detector
   subtitle: Detector
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::EntityType
   subtitle: Entity Type
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::EventType
   subtitle: Event Type
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::Label
   subtitle: Label
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
+  abstract: true
+
+- name: FraudDetector::List
+  subtitle: List
+  color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::Outcome
   subtitle: Outcome
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: FraudDetector::Variable
   subtitle: Variable
   color: "#2E907B"
+  icon: AWS/ML/Fraud-Detector.svg
   abstract: true
 
 - name: GameLift
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::Alias
   subtitle: Alias
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::Build
   subtitle: Build
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::Fleet
   subtitle: Fleet
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::GameServerGroup
   subtitle: Game Server Group
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::GameSessionQueue
   subtitle: Game Session Queue
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
+  abstract: true
+
+- name: GameLift::Location
+  subtitle: Location
+  color: "#7747D4"
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::MatchmakingConfiguration
   subtitle: Matchmaking Configuration
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::MatchmakingRuleSet
   subtitle: Matchmaking Rule Set
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GameLift::Script
   subtitle: Script
   color: "#7747D4"
-  icon: AWS/Game Tech/GameLift.svg
+  icon: AWS/Games/GameLift.svg
   abstract: true
 
 - name: GlobalAccelerator
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Global-Accelerator.svg
   abstract: true
@@ -2641,7 +3642,6 @@ resources:
 
 - name: Glue
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Glue.svg
   abstract: true
@@ -2661,7 +3661,7 @@ resources:
 - name: Glue::Crawler
   subtitle: Crawler
   color: "#7747D4"
-  icon: AWS/Analytics/Glue.svg
+  icon: AWS/Analytics/Glue_Crawler.svg
   abstract: true
 
 - name: Glue::DataCatalogEncryptionSettings
@@ -2748,9 +3748,18 @@ resources:
   icon: AWS/Analytics/Glue.svg
   abstract: true
 
+- name: Grafana
+  instanceOf: Service
+  color: "#D82C6C"
+  abstract: true
+
+- name: Grafana::Workspace
+  subtitle: Workspace
+  color: "#D82C6C"
+  abstract: true
+
 - name: Greengrass
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Greengrass.svg
   abstract: true
@@ -2853,18 +3862,24 @@ resources:
 
 - name: GreengrassV2
   instanceOf: Service
-  style: dashed
   color: "#448A27"
+  icon: AWS/IoT/IoT-Greengrass.svg
   abstract: true
 
 - name: GreengrassV2::ComponentVersion
   subtitle: Component Version
   color: "#448A27"
+  icon: AWS/IoT/IoT-Greengrass.svg
+  abstract: true
+
+- name: GreengrassV2::Deployment
+  subtitle: Deployment
+  color: "#448A27"
+  icon: AWS/IoT/IoT-Greengrass.svg
   abstract: true
 
 - name: GroundStation
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Satellite/Ground-Station.svg
   abstract: true
@@ -2889,7 +3904,6 @@ resources:
 
 - name: GuardDuty
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/GuardDuty.svg
   abstract: true
@@ -2930,47 +3944,76 @@ resources:
   icon: AWS/SIC/GuardDuty.svg
   abstract: true
 
+- name: HealthImaging
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/HealthImaging.svg
+  abstract: true
+
+- name: HealthImaging::Datastore
+  subtitle: Datastore
+  color: "#2E907B"
+  icon: AWS/ML/HealthImaging.svg
+  abstract: true
+
+- name: HealthLake
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/HealthLake.svg
+  abstract: true
+
+- name: HealthLake::FHIRDatastore
+  subtitle: FHIR Datastore
+  color: "#2E907B"
+  icon: AWS/ML/HealthLake.svg
+  abstract: true
+
 - name: IAM
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::AccessKey
   subtitle: Access Key
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::Group
   subtitle: Group
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
+  abstract: true
+
+- name: IAM::GroupPolicy
+  subtitle: Group Policy
+  color: "#DE2D34"
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::InstanceProfile
   subtitle: Instance Profile
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::ManagedPolicy
   subtitle: Managed Policy
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::OIDCProvider
   subtitle: OIDC Provider
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::Policy
   subtitle: Policy
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::Role
@@ -2979,26 +4022,38 @@ resources:
   icon: AWS/SIC/IAM_Role.svg
   abstract: true
 
+- name: IAM::RolePolicy
+  subtitle: Role Policy
+  color: "#DE2D34"
+  icon: AWS/SIC/IAM.svg
+  abstract: true
+
 - name: IAM::SAMLProvider
   subtitle: SAML Provider
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::ServerCertificate
   subtitle: Server Certificate
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::ServiceLinkedRole
   subtitle: Service Linked Role
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IAM::User
   subtitle: User
+  color: "#DE2D34"
+  icon: AWS/_General/User.svg
+  abstract: true
+
+- name: IAM::UserPolicy
+  subtitle: User Policy
   color: "#DE2D34"
   icon: AWS/_General/User.svg
   abstract: true
@@ -3012,12 +4067,11 @@ resources:
 - name: IAM::VirtualMFADevice
   subtitle: Virtual MFA Device
   color: "#DE2D34"
-  icon: AWS/SIC/Identity-and-Access-Management_IAM.svg
+  icon: AWS/SIC/IAM.svg
   abstract: true
 
 - name: IVS
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   abstract: true
 
@@ -3036,14 +4090,42 @@ resources:
   color: "#E4750E"
   abstract: true
 
+- name: IVS::Stage
+  subtitle: Stage
+  color: "#E4750E"
+  abstract: true
+
 - name: IVS::StreamKey
   subtitle: Stream Key
   color: "#E4750E"
   abstract: true
 
+- name: IVSChat
+  instanceOf: Service
+  abstract: true
+
+- name: IVSChat::LoggingConfiguration
+  subtitle: Logging Configuration
+  abstract: true
+
+- name: IVSChat::Room
+  subtitle: Room
+  abstract: true
+
+- name: IdentityStore
+  instanceOf: Service
+  abstract: true
+
+- name: IdentityStore::Group
+  subtitle: Group
+  abstract: true
+
+- name: IdentityStore::GroupMembership
+  subtitle: Group Membership
+  abstract: true
+
 - name: ImageBuilder
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   abstract: true
 
@@ -3082,9 +4164,18 @@ resources:
   color: "#E4750E"
   abstract: true
 
+- name: ImageBuilder::LifecyclePolicy
+  subtitle: Lifecycle Policy
+  color: "#E4750E"
+  abstract: true
+
+- name: ImageBuilder::Workflow
+  subtitle: Workflow
+  color: "#E4750E"
+  abstract: true
+
 - name: Inspector
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Inspector.svg
   abstract: true
@@ -3107,16 +4198,34 @@ resources:
   icon: AWS/SIC/Inspector.svg
   abstract: true
 
+- name: InspectorV2
+  instanceOf: Service
+  abstract: true
+
+- name: InspectorV2::CisScanConfiguration
+  subtitle: Cis Scan Configuration
+  abstract: true
+
+- name: InspectorV2::Filter
+  subtitle: Filter
+  abstract: true
+
+- name: InternetMonitor
+  instanceOf: Service
+  abstract: true
+
+- name: InternetMonitor::Monitor
+  subtitle: Monitor
+  abstract: true
+
 - name: IoT
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
 - name: IoT1Click
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-1-Click.svg
   abstract: true
@@ -3151,8 +4260,26 @@ resources:
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoT::BillingGroup
+  subtitle: Billing Group
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::CACertificate
+  subtitle: CA Certificate
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
 - name: IoT::Certificate
   subtitle: Certificate
+  color: "#448A27"
+  icon: AWS/IoT/IoT_Certificate.svg
+  abstract: true
+
+- name: IoT::CertificateProvider
+  subtitle: Certificate Provider
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3171,6 +4298,24 @@ resources:
 
 - name: IoT::DomainConfiguration
   subtitle: Domain Configuration
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::FleetMetric
+  subtitle: Fleet Metric
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::JobTemplate
+  subtitle: Job Template
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::Logging
+  subtitle: Logging
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3199,6 +4344,18 @@ resources:
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoT::ResourceSpecificLogging
+  subtitle: Resource Specific Logging
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::RoleAlias
+  subtitle: Role Alias
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
 - name: IoT::ScheduledAudit
   subtitle: Scheduled Audit
   color: "#448A27"
@@ -3211,14 +4368,38 @@ resources:
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoT::SoftwarePackage
+  subtitle: Software Package
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::SoftwarePackageVersion
+  subtitle: Software Package Version
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
 - name: IoT::Thing
   subtitle: Thing
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoT::ThingGroup
+  subtitle: Thing Group
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
 - name: IoT::ThingPrincipalAttachment
   subtitle: Thing Principal Attachment
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoT::ThingType
+  subtitle: Thing Type
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3237,7 +4418,6 @@ resources:
 
 - name: IoTAnalytics
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Analytics.svg
   abstract: true
@@ -3251,7 +4431,7 @@ resources:
 - name: IoTAnalytics::Dataset
   subtitle: Dataset
   color: "#448A27"
-  icon: AWS/IoT/IoT-Analytics_Data-Set.svg
+  icon: AWS/IoT/IoT-Analytics_Dataset.svg
   abstract: true
 
 - name: IoTAnalytics::Datastore
@@ -3268,7 +4448,6 @@ resources:
 
 - name: IoTCoreDeviceAdvisor
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3281,7 +4460,12 @@ resources:
 
 - name: IoTEvents
   instanceOf: Service
-  style: dashed
+  color: "#448A27"
+  icon: AWS/IoT/IoT-Events.svg
+  abstract: true
+
+- name: IoTEvents::AlarmModel
+  subtitle: Alarm Model
   color: "#448A27"
   icon: AWS/IoT/IoT-Events.svg
   abstract: true
@@ -3300,7 +4484,6 @@ resources:
 
 - name: IoTFleetHub
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3311,9 +4494,50 @@ resources:
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoTFleetWise
+  instanceOf: Service
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::Campaign
+  subtitle: Campaign
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::DecoderManifest
+  subtitle: Decoder Manifest
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::Fleet
+  subtitle: Fleet
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::ModelManifest
+  subtitle: Model Manifest
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::SignalCatalog
+  subtitle: Signal Catalog
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
+- name: IoTFleetWise::Vehicle
+  subtitle: Vehicle
+  color: "#448A27"
+  icon: AWS/IoT/IoT-FleetWise.svg
+  abstract: true
+
 - name: IoTSiteWise
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-SiteWise.svg
   abstract: true
@@ -3327,13 +4551,13 @@ resources:
 - name: IoTSiteWise::Asset
   subtitle: Asset
   color: "#448A27"
-  icon: AWS/IoT/IoT-SiteWise.svg
+  icon: AWS/IoT/IoT-SiteWise_Asset.svg
   abstract: true
 
 - name: IoTSiteWise::AssetModel
   subtitle: Asset Model
   color: "#448A27"
-  icon: AWS/IoT/IoT-SiteWise.svg
+  icon: AWS/IoT/IoT-SiteWise_Asset-Model.svg
   abstract: true
 
 - name: IoTSiteWise::Dashboard
@@ -3362,7 +4586,6 @@ resources:
 
 - name: IoTThingsGraph
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/IoT-Things-Graph.svg
   abstract: true
@@ -3373,9 +4596,44 @@ resources:
   icon: AWS/IoT/IoT-Things-Graph.svg
   abstract: true
 
+- name: IoTTwinMaker
+  instanceOf: Service
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
+- name: IoTTwinMaker::ComponentType
+  subtitle: Component Type
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
+- name: IoTTwinMaker::Entity
+  subtitle: Entity
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
+- name: IoTTwinMaker::Scene
+  subtitle: Scene
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
+- name: IoTTwinMaker::SyncJob
+  subtitle: Sync Job
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
+- name: IoTTwinMaker::Workspace
+  subtitle: Workspace
+  color: "#448A27"
+  icon: AWS/IoT/IoT-TwinMaker.svg
+  abstract: true
+
 - name: IoTWireless
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3388,6 +4646,24 @@ resources:
 
 - name: IoTWireless::DeviceProfile
   subtitle: Device Profile
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoTWireless::FuotaTask
+  subtitle: Fuota Task
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoTWireless::MulticastGroup
+  subtitle: Multicast Group
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
+- name: IoTWireless::NetworkAnalyzerConfiguration
+  subtitle: Network Analyzer Configuration
   color: "#448A27"
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
@@ -3416,6 +4692,12 @@ resources:
   icon: AWS/IoT/Internet-of-Things.svg
   abstract: true
 
+- name: IoTWireless::WirelessDeviceImportTask
+  subtitle: Wireless Device Import Task
+  color: "#448A27"
+  icon: AWS/IoT/Internet-of-Things.svg
+  abstract: true
+
 - name: IoTWireless::WirelessGateway
   subtitle: Wireless Gateway
   color: "#448A27"
@@ -3424,7 +4706,6 @@ resources:
 
 - name: KMS
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Key-Management-Service.svg
   abstract: true
@@ -3447,30 +4728,48 @@ resources:
   icon: AWS/SIC/Key-Management-Service.svg
   abstract: true
 
+- name: KafkaConnect
+  instanceOf: Service
+  abstract: true
+
+- name: KafkaConnect::Connector
+  subtitle: Connector
+  abstract: true
+
 - name: Kendra
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
+  icon: AWS/ML/Kendra.svg
   abstract: true
 
 - name: Kendra::DataSource
   subtitle: Data Source
   color: "#2E907B"
+  icon: AWS/ML/Kendra.svg
   abstract: true
 
 - name: Kendra::Faq
   subtitle: Faq
   color: "#2E907B"
+  icon: AWS/ML/Kendra.svg
   abstract: true
 
 - name: Kendra::Index
   subtitle: Index
   color: "#2E907B"
+  icon: AWS/ML/Kendra.svg
+  abstract: true
+
+- name: KendraRanking
+  instanceOf: Service
+  abstract: true
+
+- name: KendraRanking::ExecutionPlan
+  subtitle: Execution Plan
   abstract: true
 
 - name: Kinesis
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
   abstract: true
@@ -3489,7 +4788,6 @@ resources:
 
 - name: KinesisAnalytics
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
   abstract: true
@@ -3514,7 +4812,6 @@ resources:
 
 - name: KinesisAnalyticsV2
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis.svg
   abstract: true
@@ -3545,7 +4842,6 @@ resources:
 
 - name: KinesisFirehose
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Analytics/Kinesis-Data-Firehose.svg
   abstract: true
@@ -3556,9 +4852,29 @@ resources:
   icon: AWS/Analytics/Kinesis-Data-Firehose.svg
   abstract: true
 
+- name: KinesisVideo
+  instanceOf: Service
+  color: "#E4750E"
+  abstract: true
+
+- name: KinesisVideo::SignalingChannel
+  subtitle: Signaling Channel
+  color: "#E4750E"
+  abstract: true
+
+- name: KinesisVideo::Stream
+  subtitle: Stream
+  color: "#E4750E"
+  abstract: true
+
 - name: LakeFormation
   instanceOf: Service
-  style: dashed
+  color: "#7747D4"
+  icon: AWS/Analytics/Lake-Formation.svg
+  abstract: true
+
+- name: LakeFormation::DataCellsFilter
+  subtitle: Data Cells Filter
   color: "#7747D4"
   icon: AWS/Analytics/Lake-Formation.svg
   abstract: true
@@ -3575,15 +4891,32 @@ resources:
   icon: AWS/Analytics/Lake-Formation.svg
   abstract: true
 
+- name: LakeFormation::PrincipalPermissions
+  subtitle: Principal Permissions
+  color: "#7747D4"
+  icon: AWS/Analytics/Lake-Formation.svg
+  abstract: true
+
 - name: LakeFormation::Resource
   subtitle: Resource
   color: "#7747D4"
   icon: AWS/Analytics/Lake-Formation.svg
   abstract: true
 
+- name: LakeFormation::Tag
+  subtitle: Tag
+  color: "#7747D4"
+  icon: AWS/Analytics/Lake-Formation.svg
+  abstract: true
+
+- name: LakeFormation::TagAssociation
+  subtitle: Tag Association
+  color: "#7747D4"
+  icon: AWS/Analytics/Lake-Formation.svg
+  abstract: true
+
 - name: Lambda
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Compute/Lambda.svg
   abstract: true
@@ -3636,15 +4969,50 @@ resources:
   icon: AWS/Compute/Lambda.svg
   abstract: true
 
+- name: Lambda::Url
+  subtitle: Url
+  color: "#E4750E"
+  icon: AWS/Compute/Lambda.svg
+  abstract: true
+
 - name: Lambda::Version
   subtitle: Version
   color: "#E4750E"
   icon: AWS/Compute/Lambda.svg
   abstract: true
 
+- name: Lex
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Lex.svg
+  abstract: true
+
+- name: Lex::Bot
+  subtitle: Bot
+  color: "#2E907B"
+  icon: AWS/ML/Lex.svg
+  abstract: true
+
+- name: Lex::BotAlias
+  subtitle: Bot Alias
+  color: "#2E907B"
+  icon: AWS/ML/Lex.svg
+  abstract: true
+
+- name: Lex::BotVersion
+  subtitle: Bot Version
+  color: "#2E907B"
+  icon: AWS/ML/Lex.svg
+  abstract: true
+
+- name: Lex::ResourcePolicy
+  subtitle: Resource Policy
+  color: "#2E907B"
+  icon: AWS/ML/Lex.svg
+  abstract: true
+
 - name: LicenseManager
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/License-Manager.svg
   abstract: true
@@ -3661,9 +5029,85 @@ resources:
   icon: AWS/Mgmt & Gov/License-Manager.svg
   abstract: true
 
+- name: Lightsail
+  instanceOf: Service
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Alarm
+  subtitle: Alarm
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Bucket
+  subtitle: Bucket
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Certificate
+  subtitle: Certificate
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Container
+  subtitle: Container
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Database
+  subtitle: Database
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Disk
+  subtitle: Disk
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Distribution
+  subtitle: Distribution
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::Instance
+  subtitle: Instance
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::LoadBalancer
+  subtitle: Load Balancer
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::LoadBalancerTlsCertificate
+  subtitle: Load Balancer Tls Certificate
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
+- name: Lightsail::StaticIp
+  subtitle: Static Ip
+  color: "#E4750E"
+  icon: AWS/Compute/Lightsail.svg
+  abstract: true
+
 - name: Location
   instanceOf: Service
-  style: dashed
+  color: "#DE2D34"
+  abstract: true
+
+- name: Location::APIKey
+  subtitle: API Key
   color: "#DE2D34"
   abstract: true
 
@@ -3699,13 +5143,42 @@ resources:
 
 - name: Logs
   instanceOf: Service
-  style: dashed
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudWatch.svg
+  abstract: true
+
+- name: Logs::AccountPolicy
+  subtitle: Account Policy
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudWatch.svg
+  abstract: true
+
+- name: Logs::Delivery
+  subtitle: Delivery
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudWatch.svg
+  abstract: true
+
+- name: Logs::DeliveryDestination
+  subtitle: Delivery Destination
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudWatch.svg
+  abstract: true
+
+- name: Logs::DeliverySource
+  subtitle: Delivery Source
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudWatch.svg
   abstract: true
 
 - name: Logs::Destination
   subtitle: Destination
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/CloudWatch.svg
+  abstract: true
+
+- name: Logs::LogAnomalyDetector
+  subtitle: Log Anomaly Detector
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/CloudWatch.svg
   abstract: true
@@ -3748,7 +5221,6 @@ resources:
 
 - name: LookoutEquipment
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -3759,7 +5231,6 @@ resources:
 
 - name: LookoutMetrics
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -3775,7 +5246,6 @@ resources:
 
 - name: LookoutVision
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -3784,18 +5254,48 @@ resources:
   color: "#2E907B"
   abstract: true
 
+- name: M2
+  instanceOf: Service
+  abstract: true
+
+- name: M2::Application
+  subtitle: Application
+  abstract: true
+
+- name: M2::Environment
+  subtitle: Environment
+  abstract: true
+
 - name: MSK
   instanceOf: Service
-  style: dashed
+  abstract: true
+
+- name: MSK::BatchScramSecret
+  subtitle: Batch Scram Secret
   abstract: true
 
 - name: MSK::Cluster
   subtitle: Cluster
   abstract: true
 
+- name: MSK::ClusterPolicy
+  subtitle: Cluster Policy
+  abstract: true
+
+- name: MSK::Configuration
+  subtitle: Configuration
+  abstract: true
+
+- name: MSK::ServerlessCluster
+  subtitle: Serverless Cluster
+  abstract: true
+
+- name: MSK::VpcConnection
+  subtitle: Vpc Connection
+  abstract: true
+
 - name: MWAA
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -3806,7 +5306,12 @@ resources:
 
 - name: Macie
   instanceOf: Service
-  style: dashed
+  color: "#DE2D34"
+  icon: AWS/SIC/Macie.svg
+  abstract: true
+
+- name: Macie::AllowList
+  subtitle: Allow List
   color: "#DE2D34"
   icon: AWS/SIC/Macie.svg
   abstract: true
@@ -3831,7 +5336,12 @@ resources:
 
 - name: ManagedBlockchain
   instanceOf: Service
-  style: dashed
+  color: "#E4750E"
+  icon: AWS/Blockchain/Managed-Blockchain.svg
+  abstract: true
+
+- name: ManagedBlockchain::Accessor
+  subtitle: Accessor
   color: "#E4750E"
   icon: AWS/Blockchain/Managed-Blockchain.svg
   abstract: true
@@ -3850,7 +5360,24 @@ resources:
 
 - name: MediaConnect
   instanceOf: Service
-  style: dashed
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaConnect.svg
+  abstract: true
+
+- name: MediaConnect::Bridge
+  subtitle: Bridge
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaConnect.svg
+  abstract: true
+
+- name: MediaConnect::BridgeOutput
+  subtitle: Bridge Output
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaConnect.svg
+  abstract: true
+
+- name: MediaConnect::BridgeSource
+  subtitle: Bridge Source
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaConnect.svg
   abstract: true
@@ -3885,9 +5412,14 @@ resources:
   icon: AWS/Media Services/Elemental-MediaConnect.svg
   abstract: true
 
+- name: MediaConnect::Gateway
+  subtitle: Gateway
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaConnect.svg
+  abstract: true
+
 - name: MediaConvert
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaConvert.svg
   abstract: true
@@ -3912,7 +5444,6 @@ resources:
 
 - name: MediaLive
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaLive.svg
   abstract: true
@@ -3935,9 +5466,20 @@ resources:
   icon: AWS/Media Services/Elemental-MediaLive.svg
   abstract: true
 
+- name: MediaLive::Multiplex
+  subtitle: Multiplex
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaLive.svg
+  abstract: true
+
+- name: MediaLive::Multiplexprogram
+  subtitle: Multiplexprogram
+  color: "#E4750E"
+  icon: AWS/Media Services/Elemental-MediaLive.svg
+  abstract: true
+
 - name: MediaPackage
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaPackage.svg
   abstract: true
@@ -3972,9 +5514,32 @@ resources:
   icon: AWS/Media Services/Elemental-MediaPackage.svg
   abstract: true
 
+- name: MediaPackageV2
+  instanceOf: Service
+  abstract: true
+
+- name: MediaPackageV2::Channel
+  subtitle: Channel
+  abstract: true
+
+- name: MediaPackageV2::ChannelGroup
+  subtitle: Channel Group
+  abstract: true
+
+- name: MediaPackageV2::ChannelPolicy
+  subtitle: Channel Policy
+  abstract: true
+
+- name: MediaPackageV2::OriginEndpoint
+  subtitle: Origin Endpoint
+  abstract: true
+
+- name: MediaPackageV2::OriginEndpointPolicy
+  subtitle: Origin Endpoint Policy
+  abstract: true
+
 - name: MediaStore
   instanceOf: Service
-  style: dashed
   color: "#E4750E"
   icon: AWS/Media Services/Elemental-MediaStore.svg
   abstract: true
@@ -3985,9 +5550,59 @@ resources:
   icon: AWS/Media Services/Elemental-MediaStore.svg
   abstract: true
 
+- name: MediaTailor
+  instanceOf: Service
+  color: "#E4750E"
+  abstract: true
+
+- name: MediaTailor::LiveSource
+  subtitle: Live Source
+  color: "#E4750E"
+  abstract: true
+
+- name: MediaTailor::PlaybackConfiguration
+  subtitle: Playback Configuration
+  color: "#E4750E"
+  abstract: true
+
+- name: MediaTailor::VodSource
+  subtitle: Vod Source
+  color: "#E4750E"
+  abstract: true
+
+- name: MemoryDB
+  instanceOf: Service
+  color: "#7747D4"
+  abstract: true
+
+- name: MemoryDB::ACL
+  subtitle: ACL
+  color: "#7747D4"
+  abstract: true
+
+- name: MemoryDB::Cluster
+  subtitle: Cluster
+  color: "#7747D4"
+  abstract: true
+
+- name: MemoryDB::ParameterGroup
+  subtitle: Parameter Group
+  color: "#7747D4"
+  abstract: true
+
+- name: MemoryDB::SubnetGroup
+  subtitle: Subnet Group
+  color: "#7747D4"
+  abstract: true
+
+- name: MemoryDB::User
+  subtitle: User
+  color: "#7747D4"
+  icon: AWS/_General/User.svg
+  abstract: true
+
 - name: Neptune
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/Neptune.svg
   abstract: true
@@ -4022,9 +5637,20 @@ resources:
   icon: AWS/Database/Neptune.svg
   abstract: true
 
+- name: NeptuneGraph
+  instanceOf: Service
+  abstract: true
+
+- name: NeptuneGraph::Graph
+  subtitle: Graph
+  abstract: true
+
+- name: NeptuneGraph::Graph
+  subtitle: Graph
+  abstract: true
+
 - name: NetworkFirewall
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Firewall-Manager.svg
   abstract: true
@@ -4053,9 +5679,29 @@ resources:
   icon: AWS/SIC/Firewall-Manager.svg
   abstract: true
 
+- name: NetworkFirewall::TLSInspectionConfiguration
+  subtitle: TLS Inspection Configuration
+  color: "#DE2D34"
+  icon: AWS/SIC/Firewall-Manager.svg
+  abstract: true
+
 - name: NetworkManager
   instanceOf: Service
-  style: dashed
+  color: "#DE2D34"
+  abstract: true
+
+- name: NetworkManager::ConnectAttachment
+  subtitle: Connect Attachment
+  color: "#DE2D34"
+  abstract: true
+
+- name: NetworkManager::ConnectPeer
+  subtitle: Connect Peer
+  color: "#DE2D34"
+  abstract: true
+
+- name: NetworkManager::CoreNetwork
+  subtitle: Core Network
   color: "#DE2D34"
   abstract: true
 
@@ -4089,40 +5735,158 @@ resources:
   color: "#DE2D34"
   abstract: true
 
+- name: NetworkManager::SiteToSiteVpnAttachment
+  subtitle: Site To Site Vpn Attachment
+  color: "#DE2D34"
+  abstract: true
+
+- name: NetworkManager::TransitGatewayPeering
+  subtitle: Transit Gateway Peering
+  color: "#DE2D34"
+  abstract: true
+
 - name: NetworkManager::TransitGatewayRegistration
   subtitle: Transit Gateway Registration
   color: "#DE2D34"
   abstract: true
 
+- name: NetworkManager::TransitGatewayRouteTableAttachment
+  subtitle: Transit Gateway Route Table Attachment
+  color: "#DE2D34"
+  abstract: true
+
+- name: NetworkManager::VpcAttachment
+  subtitle: Vpc Attachment
+  color: "#DE2D34"
+  abstract: true
+
 - name: NimbleStudio
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
+  icon: AWS/Media Services/Nimble-Studio.svg
   abstract: true
 
 - name: NimbleStudio::LaunchProfile
   subtitle: Launch Profile
   color: "#2E907B"
+  icon: AWS/Media Services/Nimble-Studio.svg
   abstract: true
 
 - name: NimbleStudio::StreamingImage
   subtitle: Streaming Image
   color: "#2E907B"
+  icon: AWS/Media Services/Nimble-Studio.svg
   abstract: true
 
 - name: NimbleStudio::Studio
   subtitle: Studio
   color: "#2E907B"
+  icon: AWS/Media Services/Nimble-Studio.svg
   abstract: true
 
 - name: NimbleStudio::StudioComponent
   subtitle: Studio Component
   color: "#2E907B"
+  icon: AWS/Media Services/Nimble-Studio.svg
+  abstract: true
+
+- name: OSIS
+  instanceOf: Service
+  abstract: true
+
+- name: OSIS::Pipeline
+  subtitle: Pipeline
+  abstract: true
+
+- name: Oam
+  instanceOf: Service
+  abstract: true
+
+- name: Oam::Link
+  subtitle: Link
+  abstract: true
+
+- name: Oam::Sink
+  subtitle: Sink
+  abstract: true
+
+- name: Omics
+  instanceOf: Service
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::AnnotationStore
+  subtitle: Annotation Store
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::ReferenceStore
+  subtitle: Reference Store
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::RunGroup
+  subtitle: Run Group
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::SequenceStore
+  subtitle: Sequence Store
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::VariantStore
+  subtitle: Variant Store
+  color: "#2E907B"
+  abstract: true
+
+- name: Omics::Workflow
+  subtitle: Workflow
+  color: "#2E907B"
+  abstract: true
+
+- name: OpenSearchServerless
+  instanceOf: Service
+  abstract: true
+
+- name: OpenSearchServerless::AccessPolicy
+  subtitle: Access Policy
+  abstract: true
+
+- name: OpenSearchServerless::Collection
+  subtitle: Collection
+  abstract: true
+
+- name: OpenSearchServerless::LifecyclePolicy
+  subtitle: Lifecycle Policy
+  abstract: true
+
+- name: OpenSearchServerless::SecurityConfig
+  subtitle: Security Config
+  abstract: true
+
+- name: OpenSearchServerless::SecurityPolicy
+  subtitle: Security Policy
+  abstract: true
+
+- name: OpenSearchServerless::VpcEndpoint
+  subtitle: Vpc Endpoint
+  abstract: true
+
+- name: OpenSearchService
+  instanceOf: Service
+  color: "#7747D4"
+  icon: AWS/Analytics/OpenSearch-Service.svg
+  abstract: true
+
+- name: OpenSearchService::Domain
+  subtitle: Domain
+  color: "#7747D4"
+  icon: AWS/Analytics/OpenSearch-Service.svg
   abstract: true
 
 - name: OpsWorks
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/OpsWorks.svg
   abstract: true
@@ -4171,7 +5935,6 @@ resources:
 
 - name: OpsWorksCM
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/OpsWorks.svg
   abstract: true
@@ -4182,217 +5945,389 @@ resources:
   icon: AWS/Mgmt & Gov/OpsWorks.svg
   abstract: true
 
+- name: Organizations
+  instanceOf: Service
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations.svg
+  abstract: true
+
+- name: Organizations::Account
+  subtitle: Account
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations_Account.svg
+  abstract: true
+
+- name: Organizations::Organization
+  subtitle: Organization
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations.svg
+  abstract: true
+
+- name: Organizations::OrganizationalUnit
+  subtitle: Organizational Unit
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations_Organizational-Unit.svg
+  abstract: true
+
+- name: Organizations::Policy
+  subtitle: Policy
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations.svg
+  abstract: true
+
+- name: Organizations::ResourcePolicy
+  subtitle: Resource Policy
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Organizations.svg
+  abstract: true
+
+- name: PCAConnectorAD
+  instanceOf: Service
+  abstract: true
+
+- name: PCAConnectorAD::Connector
+  subtitle: Connector
+  abstract: true
+
+- name: PCAConnectorAD::DirectoryRegistration
+  subtitle: Directory Registration
+  abstract: true
+
+- name: PCAConnectorAD::ServicePrincipalName
+  subtitle: Service Principal Name
+  abstract: true
+
+- name: PCAConnectorAD::Template
+  subtitle: Template
+  abstract: true
+
+- name: PCAConnectorAD::TemplateGroupAccessControlEntry
+  subtitle: Template Group Access Control Entry
+  abstract: true
+
+- name: Panorama
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Panorama.svg
+  abstract: true
+
+- name: Panorama::ApplicationInstance
+  subtitle: Application Instance
+  color: "#2E907B"
+  icon: AWS/ML/Panorama.svg
+  abstract: true
+
+- name: Panorama::Package
+  subtitle: Package
+  color: "#2E907B"
+  icon: AWS/ML/Panorama.svg
+  abstract: true
+
+- name: Panorama::PackageVersion
+  subtitle: Package Version
+  color: "#2E907B"
+  icon: AWS/ML/Panorama.svg
+  abstract: true
+
+- name: Personalize
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Personalize.svg
+  abstract: true
+
+- name: Personalize::Dataset
+  subtitle: Dataset
+  color: "#2E907B"
+  icon: AWS/ML/Personalize.svg
+  abstract: true
+
+- name: Personalize::DatasetGroup
+  subtitle: Dataset Group
+  color: "#2E907B"
+  icon: AWS/ML/Personalize.svg
+  abstract: true
+
+- name: Personalize::Schema
+  subtitle: Schema
+  color: "#2E907B"
+  icon: AWS/ML/Personalize.svg
+  abstract: true
+
+- name: Personalize::Solution
+  subtitle: Solution
+  color: "#2E907B"
+  icon: AWS/ML/Personalize.svg
+  abstract: true
+
 - name: Pinpoint
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::ADMChannel
   subtitle: ADM Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::APNSChannel
   subtitle: APNS Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::APNSSandboxChannel
   subtitle: APNS Sandbox Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::APNSVoipChannel
   subtitle: APNS Voip Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::APNSVoipSandboxChannel
   subtitle: APNS Voip Sandbox Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::App
   subtitle: App
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::ApplicationSettings
   subtitle: Application Settings
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::BaiduChannel
   subtitle: Baidu Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::Campaign
   subtitle: Campaign
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::EmailChannel
   subtitle: Email Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::EmailTemplate
   subtitle: Email Template
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::EventStream
   subtitle: Event Stream
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::GCMChannel
   subtitle: GCM Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
+  abstract: true
+
+- name: Pinpoint::InAppTemplate
+  subtitle: In App Template
+  color: "#4053D6"
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::PushTemplate
   subtitle: Push Template
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::SMSChannel
   subtitle: SMS Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::Segment
   subtitle: Segment
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::SmsTemplate
   subtitle: Sms Template
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: Pinpoint::VoiceChannel
   subtitle: Voice Channel
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: PinpointEmail
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: PinpointEmail::ConfigurationSet
   subtitle: Configuration Set
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: PinpointEmail::ConfigurationSetEventDestination
   subtitle: Configuration Set Event Destination
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: PinpointEmail::DedicatedIpPool
   subtitle: Dedicated Ip Pool
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
   abstract: true
 
 - name: PinpointEmail::Identity
   subtitle: Identity
   color: "#4053D6"
-  icon: AWS/Mobile/Pinpoint.svg
+  icon: AWS/Business Apps/Pinpoint.svg
+  abstract: true
+
+- name: Pipes
+  instanceOf: Service
+  color: "#D82C6C"
+  abstract: true
+
+- name: Pipes::Pipe
+  subtitle: Pipe
+  color: "#D82C6C"
+  abstract: true
+
+- name: Proton
+  instanceOf: Service
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Proton.svg
+  abstract: true
+
+- name: Proton::EnvironmentAccountConnection
+  subtitle: Environment Account Connection
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Proton.svg
+  abstract: true
+
+- name: Proton::EnvironmentTemplate
+  subtitle: Environment Template
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Proton.svg
+  abstract: true
+
+- name: Proton::ServiceTemplate
+  subtitle: Service Template
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Proton.svg
   abstract: true
 
 - name: QLDB
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
-  icon: AWS/Blockchain/Quantum-Ledger-Database-QLDB.svg
+  icon: AWS/Blockchain/Quantum-Ledger-Database.svg
   abstract: true
 
 - name: QLDB::Ledger
   subtitle: Ledger
   color: "#4053D6"
-  icon: AWS/Blockchain/Quantum-Ledger-Database-QLDB.svg
+  icon: AWS/Blockchain/Quantum-Ledger-Database.svg
   abstract: true
 
 - name: QLDB::Stream
   subtitle: Stream
   color: "#4053D6"
-  icon: AWS/Blockchain/Quantum-Ledger-Database-QLDB.svg
+  icon: AWS/Blockchain/Quantum-Ledger-Database.svg
   abstract: true
 
 - name: QuickSight
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::Analysis
   subtitle: Analysis
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::Dashboard
   subtitle: Dashboard
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::DataSet
   subtitle: Data Set
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::DataSource
   subtitle: Data Source
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
+  abstract: true
+
+- name: QuickSight::RefreshSchedule
+  subtitle: Refresh Schedule
+  color: "#7747D4"
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::Template
   subtitle: Template
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: QuickSight::Theme
   subtitle: Theme
   color: "#7747D4"
-  icon: AWS/Analytics/Quicksight.svg
+  icon: AWS/Analytics/QuickSight.svg
+  abstract: true
+
+- name: QuickSight::Topic
+  subtitle: Topic
+  color: "#7747D4"
+  icon: AWS/Analytics/QuickSight.svg
+  abstract: true
+
+- name: QuickSight::VPCConnection
+  subtitle: VPC Connection
+  color: "#7747D4"
+  icon: AWS/Analytics/QuickSight.svg
   abstract: true
 
 - name: RAM
   instanceOf: Service
-  style: dashed
+  color: "#DE2D34"
+  abstract: true
+
+- name: RAM::Permission
+  subtitle: Permission
   color: "#DE2D34"
   abstract: true
 
@@ -4403,7 +6338,12 @@ resources:
 
 - name: RDS
   instanceOf: Service
-  style: dashed
+  color: "#4053D6"
+  icon: AWS/Database/RDS.svg
+  abstract: true
+
+- name: RDS::CustomDBEngineVersion
+  subtitle: Custom DB Engine Version
   color: "#4053D6"
   icon: AWS/Database/RDS.svg
   abstract: true
@@ -4480,52 +6420,185 @@ resources:
   icon: AWS/Database/RDS.svg
   abstract: true
 
+- name: RDS::Integration
+  subtitle: Integration
+  color: "#4053D6"
+  icon: AWS/Database/RDS.svg
+  abstract: true
+
 - name: RDS::OptionGroup
   subtitle: Option Group
   color: "#4053D6"
   icon: AWS/Database/RDS.svg
   abstract: true
 
+- name: RUM
+  instanceOf: Service
+  color: "#D82C6C"
+  abstract: true
+
+- name: RUM::AppMonitor
+  subtitle: App Monitor
+  color: "#D82C6C"
+  abstract: true
+
 - name: Redshift
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
   abstract: true
 
 - name: Redshift::Cluster
   subtitle: Cluster
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
   abstract: true
 
 - name: Redshift::ClusterParameterGroup
   subtitle: Cluster Parameter Group
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
   abstract: true
 
 - name: Redshift::ClusterSecurityGroup
   subtitle: Cluster Security Group
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
   abstract: true
 
 - name: Redshift::ClusterSecurityGroupIngress
   subtitle: Cluster Security Group Ingress
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
   abstract: true
 
 - name: Redshift::ClusterSubnetGroup
   subtitle: Cluster Subnet Group
   color: "#7747D4"
-  icon: AWS/Database/Redshift.svg
+  icon: AWS/Analytics/Redshift.svg
+  abstract: true
+
+- name: Redshift::EndpointAccess
+  subtitle: Endpoint Access
+  color: "#7747D4"
+  icon: AWS/Analytics/Redshift.svg
+  abstract: true
+
+- name: Redshift::EndpointAuthorization
+  subtitle: Endpoint Authorization
+  color: "#7747D4"
+  icon: AWS/Analytics/Redshift.svg
+  abstract: true
+
+- name: Redshift::EventSubscription
+  subtitle: Event Subscription
+  color: "#7747D4"
+  icon: AWS/Analytics/Redshift.svg
+  abstract: true
+
+- name: Redshift::ScheduledAction
+  subtitle: Scheduled Action
+  color: "#7747D4"
+  icon: AWS/Analytics/Redshift.svg
+  abstract: true
+
+- name: RedshiftServerless
+  instanceOf: Service
+  abstract: true
+
+- name: RedshiftServerless::Namespace
+  subtitle: Namespace
+  abstract: true
+
+- name: RedshiftServerless::Workgroup
+  subtitle: Workgroup
+  abstract: true
+
+- name: RefactorSpaces
+  instanceOf: Service
+  color: "#448A27"
+  abstract: true
+
+- name: RefactorSpaces::Application
+  subtitle: Application
+  color: "#448A27"
+  abstract: true
+
+- name: RefactorSpaces::Environment
+  subtitle: Environment
+  color: "#448A27"
+  abstract: true
+
+- name: RefactorSpaces::Route
+  subtitle: Route
+  color: "#448A27"
+  abstract: true
+
+- name: RefactorSpaces::Service
+  subtitle: Service
+  color: "#448A27"
+  abstract: true
+
+- name: Rekognition
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/ML/Rekognition.svg
+  abstract: true
+
+- name: Rekognition::Collection
+  subtitle: Collection
+  color: "#2E907B"
+  icon: AWS/ML/Rekognition.svg
+  abstract: true
+
+- name: Rekognition::Project
+  subtitle: Project
+  color: "#2E907B"
+  icon: AWS/ML/Rekognition.svg
+  abstract: true
+
+- name: Rekognition::StreamProcessor
+  subtitle: Stream Processor
+  color: "#2E907B"
+  icon: AWS/ML/Rekognition.svg
+  abstract: true
+
+- name: ResilienceHub
+  instanceOf: Service
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Resilience-Hub.svg
+  abstract: true
+
+- name: ResilienceHub::App
+  subtitle: App
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Resilience-Hub.svg
+  abstract: true
+
+- name: ResilienceHub::ResiliencyPolicy
+  subtitle: Resiliency Policy
+  color: "#D82C6C"
+  icon: AWS/Mgmt & Gov/Resilience-Hub.svg
+  abstract: true
+
+- name: ResourceExplorer2
+  instanceOf: Service
+  abstract: true
+
+- name: ResourceExplorer2::DefaultViewAssociation
+  subtitle: Default View Association
+  abstract: true
+
+- name: ResourceExplorer2::Index
+  subtitle: Index
+  abstract: true
+
+- name: ResourceExplorer2::View
+  subtitle: View
   abstract: true
 
 - name: ResourceGroups
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -4536,7 +6609,6 @@ resources:
 
 - name: RoboMaker
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/Robotics/RoboMaker.svg
   abstract: true
@@ -4577,9 +6649,30 @@ resources:
   icon: AWS/Robotics/RoboMaker.svg
   abstract: true
 
+- name: RolesAnywhere
+  instanceOf: Service
+  abstract: true
+
+- name: RolesAnywhere::CRL
+  subtitle: CRL
+  abstract: true
+
+- name: RolesAnywhere::Profile
+  subtitle: Profile
+  abstract: true
+
+- name: RolesAnywhere::TrustAnchor
+  subtitle: Trust Anchor
+  abstract: true
+
 - name: Route53
   instanceOf: Service
-  style: dashed
+  color: "#7747D4"
+  icon: AWS/Networking/Route-53.svg
+  abstract: true
+
+- name: Route53::CidrCollection
+  subtitle: Cidr Collection
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
   abstract: true
@@ -4599,7 +6692,7 @@ resources:
 - name: Route53::HostedZone
   subtitle: Hosted Zone
   color: "#7747D4"
-  icon: AWS/Networking/Route-53_Hosted-Zone.svg
+  icon: AWS/Networking/Route-53-Hosted-Zone.svg
   abstract: true
 
 - name: Route53::KeySigningKey
@@ -4622,38 +6715,36 @@ resources:
 
 - name: Route53RecoveryControl
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Route-53-Application-Recovery-Controller.svg
   abstract: true
 
 - name: Route53RecoveryControl::Cluster
   subtitle: Cluster
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Route-53-Application-Recovery-Controller.svg
   abstract: true
 
 - name: Route53RecoveryControl::ControlPanel
   subtitle: Control Panel
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Route-53-Application-Recovery-Controller.svg
   abstract: true
 
 - name: Route53RecoveryControl::RoutingControl
   subtitle: Routing Control
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Route-53-Application-Recovery-Controller.svg
   abstract: true
 
 - name: Route53RecoveryControl::SafetyRule
   subtitle: Safety Rule
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Route-53-Application-Recovery-Controller.svg
   abstract: true
 
 - name: Route53RecoveryReadiness
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
   icon: AWS/Networking/Route-53.svg
   abstract: true
@@ -4684,68 +6775,96 @@ resources:
 
 - name: Route53Resolver
   instanceOf: Service
-  style: dashed
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::FirewallDomainList
   subtitle: Firewall Domain List
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::FirewallRuleGroup
   subtitle: Firewall Rule Group
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::FirewallRuleGroupAssociation
   subtitle: Firewall Rule Group Association
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
+  abstract: true
+
+- name: Route53Resolver::OutpostResolver
+  subtitle: Outpost Resolver
+  color: "#7747D4"
+  icon: AWS/Networking/Route-53_Resolver.svg
+  abstract: true
+
+- name: Route53Resolver::ResolverConfig
+  subtitle: Resolver Config
+  color: "#7747D4"
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverDNSSECConfig
   subtitle: Resolver DNSSEC Config
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverEndpoint
   subtitle: Resolver Endpoint
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverQueryLoggingConfig
   subtitle: Resolver Query Logging Config
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverQueryLoggingConfigAssociation
   subtitle: Resolver Query Logging Config Association
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverRule
   subtitle: Resolver Rule
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: Route53Resolver::ResolverRuleAssociation
   subtitle: Resolver Rule Association
   color: "#7747D4"
-  icon: AWS/Networking/Route-53.svg
+  icon: AWS/Networking/Route-53_Resolver.svg
   abstract: true
 
 - name: S3
   instanceOf: Service
-  style: dashed
+  color: "#448A27"
+  icon: AWS/Storage/S3.svg
+  abstract: true
+
+- name: S3::AccessGrant
+  subtitle: Access Grant
+  color: "#448A27"
+  icon: AWS/Storage/S3.svg
+  abstract: true
+
+- name: S3::AccessGrantsInstance
+  subtitle: Access Grants Instance
+  color: "#448A27"
+  icon: AWS/Storage/S3.svg
+  abstract: true
+
+- name: S3::AccessGrantsLocation
+  subtitle: Access Grants Location
   color: "#448A27"
   icon: AWS/Storage/S3.svg
   abstract: true
@@ -4768,15 +6887,44 @@ resources:
   icon: AWS/Storage/S3.svg
   abstract: true
 
-- name: S3::StorageLens
-  subtitle: Storage Lens
+- name: S3::MultiRegionAccessPoint
+  subtitle: Multi Region Access Point
   color: "#448A27"
   icon: AWS/Storage/S3.svg
   abstract: true
 
+- name: S3::MultiRegionAccessPointPolicy
+  subtitle: Multi Region Access Point Policy
+  color: "#448A27"
+  icon: AWS/Storage/S3.svg
+  abstract: true
+
+- name: S3::StorageLens
+  subtitle: Storage Lens
+  color: "#448A27"
+  icon: AWS/Storage/S3-Storage-Lens.svg
+  abstract: true
+
+- name: S3::StorageLensGroup
+  subtitle: Storage Lens Group
+  color: "#448A27"
+  icon: AWS/Storage/S3.svg
+  abstract: true
+
+- name: S3Express
+  instanceOf: Service
+  abstract: true
+
+- name: S3Express::BucketPolicy
+  subtitle: Bucket Policy
+  abstract: true
+
+- name: S3Express::DirectoryBucket
+  subtitle: Directory Bucket
+  abstract: true
+
 - name: S3ObjectLambda
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/Storage/S3.svg
   abstract: true
@@ -4795,7 +6943,6 @@ resources:
 
 - name: S3Outposts
   instanceOf: Service
-  style: dashed
   color: "#448A27"
   icon: AWS/Storage/S3.svg
   abstract: true
@@ -4826,7 +6973,6 @@ resources:
 
 - name: SDB
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: SDB::Domain
@@ -4835,56 +6981,72 @@ resources:
 
 - name: SES
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ConfigurationSet
   subtitle: Configuration Set
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ConfigurationSetEventDestination
   subtitle: Configuration Set Event Destination
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ContactList
   subtitle: Contact List
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
+  abstract: true
+
+- name: SES::DedicatedIpPool
+  subtitle: Dedicated Ip Pool
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Simple-Email-Service.svg
+  abstract: true
+
+- name: SES::EmailIdentity
+  subtitle: Email Identity
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ReceiptFilter
   subtitle: Receipt Filter
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ReceiptRule
   subtitle: Receipt Rule
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::ReceiptRuleSet
   subtitle: Receipt Rule Set
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SES::Template
   subtitle: Template
   color: "#DE2D34"
-  icon: AWS/Customer Engagement/Simple-Email-Service-SES.svg
+  icon: AWS/Business Apps/Simple-Email-Service.svg
+  abstract: true
+
+- name: SES::VdmAttributes
+  subtitle: Vdm Attributes
+  color: "#DE2D34"
+  icon: AWS/Business Apps/Simple-Email-Service.svg
   abstract: true
 
 - name: SNS
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/SNS.svg
   abstract: true
@@ -4901,6 +7063,12 @@ resources:
   icon: AWS/App Integration/SNS_Topic.svg
   abstract: true
 
+- name: SNS::TopicInlinePolicy
+  subtitle: Topic Inline Policy
+  color: "#D82C6C"
+  icon: AWS/App Integration/SNS.svg
+  abstract: true
+
 - name: SNS::TopicPolicy
   subtitle: Topic Policy
   color: "#D82C6C"
@@ -4909,7 +7077,6 @@ resources:
 
 - name: SQS
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/SQS.svg
   abstract: true
@@ -4920,6 +7087,12 @@ resources:
   icon: AWS/App Integration/SQS_Queue.svg
   abstract: true
 
+- name: SQS::QueueInlinePolicy
+  subtitle: Queue Inline Policy
+  color: "#D82C6C"
+  icon: AWS/App Integration/SQS.svg
+  abstract: true
+
 - name: SQS::QueuePolicy
   subtitle: Queue Policy
   color: "#D82C6C"
@@ -4928,7 +7101,6 @@ resources:
 
 - name: SSM
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -4974,7 +7146,6 @@ resources:
 
 - name: SSMContacts
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -4988,9 +7159,18 @@ resources:
   color: "#D82C6C"
   abstract: true
 
+- name: SSMContacts::Plan
+  subtitle: Plan
+  color: "#D82C6C"
+  abstract: true
+
+- name: SSMContacts::Rotation
+  subtitle: Rotation
+  color: "#D82C6C"
+  abstract: true
+
 - name: SSMIncidents
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   abstract: true
 
@@ -5006,7 +7186,6 @@ resources:
 
 - name: SSO
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   abstract: true
 
@@ -5027,7 +7206,6 @@ resources:
 
 - name: SageMaker
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   icon: AWS/ML/SageMaker.svg
   abstract: true
@@ -5104,6 +7282,18 @@ resources:
   icon: AWS/ML/SageMaker.svg
   abstract: true
 
+- name: SageMaker::InferenceComponent
+  subtitle: Inference Component
+  color: "#2E907B"
+  icon: AWS/ML/SageMaker.svg
+  abstract: true
+
+- name: SageMaker::InferenceExperiment
+  subtitle: Inference Experiment
+  color: "#2E907B"
+  icon: AWS/ML/SageMaker.svg
+  abstract: true
+
 - name: SageMaker::Model
   subtitle: Model
   color: "#2E907B"
@@ -5116,8 +7306,20 @@ resources:
   icon: AWS/ML/SageMaker.svg
   abstract: true
 
+- name: SageMaker::ModelCard
+  subtitle: Model Card
+  color: "#2E907B"
+  icon: AWS/ML/SageMaker.svg
+  abstract: true
+
 - name: SageMaker::ModelExplainabilityJobDefinition
   subtitle: Model Explainability Job Definition
+  color: "#2E907B"
+  icon: AWS/ML/SageMaker.svg
+  abstract: true
+
+- name: SageMaker::ModelPackage
+  subtitle: Model Package
   color: "#2E907B"
   icon: AWS/ML/SageMaker.svg
   abstract: true
@@ -5164,6 +7366,12 @@ resources:
   icon: AWS/ML/SageMaker.svg
   abstract: true
 
+- name: SageMaker::Space
+  subtitle: Space
+  color: "#2E907B"
+  icon: AWS/ML/SageMaker.svg
+  abstract: true
+
 - name: SageMaker::UserProfile
   subtitle: User Profile
   color: "#2E907B"
@@ -5176,9 +7384,24 @@ resources:
   icon: AWS/ML/SageMaker.svg
   abstract: true
 
+- name: Scheduler
+  instanceOf: Service
+  abstract: true
+
+- name: Scheduler::Schedule
+  subtitle: Schedule
+  abstract: true
+
+- name: Scheduler::Schedule
+  subtitle: Schedule
+  abstract: true
+
+- name: Scheduler::ScheduleGroup
+  subtitle: Schedule Group
+  abstract: true
+
 - name: SecretsManager
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/Secrets-Manager.svg
   abstract: true
@@ -5209,7 +7432,12 @@ resources:
 
 - name: SecurityHub
   instanceOf: Service
-  style: dashed
+  color: "#DE2D34"
+  icon: AWS/SIC/Security-Hub.svg
+  abstract: true
+
+- name: SecurityHub::AutomationRule
+  subtitle: Automation Rule
   color: "#DE2D34"
   icon: AWS/SIC/Security-Hub.svg
   abstract: true
@@ -5220,9 +7448,14 @@ resources:
   icon: AWS/SIC/Security-Hub.svg
   abstract: true
 
+- name: SecurityHub::Standard
+  subtitle: Standard
+  color: "#DE2D34"
+  icon: AWS/SIC/Security-Hub.svg
+  abstract: true
+
 - name: ServiceCatalog
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Service-Catalog.svg
   abstract: true
@@ -5325,7 +7558,6 @@ resources:
 
 - name: ServiceCatalogAppRegistry
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/Mgmt & Gov/Service-Catalog.svg
   abstract: true
@@ -5356,7 +7588,6 @@ resources:
 
 - name: ServiceDiscovery
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
   abstract: true
 
@@ -5385,25 +7616,68 @@ resources:
   color: "#2E907B"
   abstract: true
 
+- name: Shield
+  instanceOf: Service
+  color: "#DE2D34"
+  icon: AWS/SIC/Shield.svg
+  abstract: true
+
+- name: Shield::DRTAccess
+  subtitle: DRT Access
+  color: "#DE2D34"
+  icon: AWS/SIC/Shield.svg
+  abstract: true
+
+- name: Shield::ProactiveEngagement
+  subtitle: Proactive Engagement
+  color: "#DE2D34"
+  icon: AWS/SIC/Shield.svg
+  abstract: true
+
+- name: Shield::Protection
+  subtitle: Protection
+  color: "#DE2D34"
+  icon: AWS/SIC/Shield.svg
+  abstract: true
+
+- name: Shield::ProtectionGroup
+  subtitle: Protection Group
+  color: "#DE2D34"
+  icon: AWS/SIC/Shield.svg
+  abstract: true
+
 - name: Signer
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
+  icon: AWS/SIC/Signer.svg
   abstract: true
 
 - name: Signer::ProfilePermission
   subtitle: Profile Permission
   color: "#DE2D34"
+  icon: AWS/SIC/Signer.svg
   abstract: true
 
 - name: Signer::SigningProfile
   subtitle: Signing Profile
   color: "#DE2D34"
+  icon: AWS/SIC/Signer.svg
+  abstract: true
+
+- name: SimSpaceWeaver
+  instanceOf: Service
+  color: "#E4750E"
+  icon: AWS/Compute/SimSpace-Weaver.svg
+  abstract: true
+
+- name: SimSpaceWeaver::Simulation
+  subtitle: Simulation
+  color: "#E4750E"
+  icon: AWS/Compute/SimSpace-Weaver.svg
   abstract: true
 
 - name: StepFunctions
   instanceOf: Service
-  style: dashed
   color: "#D82C6C"
   icon: AWS/App Integration/Step-Functions.svg
   abstract: true
@@ -5420,24 +7694,62 @@ resources:
   icon: AWS/App Integration/Step-Functions.svg
   abstract: true
 
+- name: StepFunctions::StateMachineAlias
+  subtitle: State Machine Alias
+  color: "#D82C6C"
+  icon: AWS/App Integration/Step-Functions.svg
+  abstract: true
+
+- name: SupportApp
+  instanceOf: Service
+  abstract: true
+
+- name: SupportApp::AccountAlias
+  subtitle: Account Alias
+  abstract: true
+
+- name: SupportApp::SlackChannelConfiguration
+  subtitle: Slack Channel Configuration
+  abstract: true
+
+- name: SupportApp::SlackWorkspaceConfiguration
+  subtitle: Slack Workspace Configuration
+  abstract: true
+
 - name: Synthetics
   instanceOf: Service
-  style: dashed
   abstract: true
 
 - name: Synthetics::Canary
   subtitle: Canary
   abstract: true
 
+- name: Synthetics::Group
+  subtitle: Group
+  abstract: true
+
+- name: SystemsManagerSAP
+  instanceOf: Service
+  abstract: true
+
+- name: SystemsManagerSAP::Application
+  subtitle: Application
+  abstract: true
+
 - name: Timestream
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Database/Timestream.svg
   abstract: true
 
 - name: Timestream::Database
   subtitle: Database
+  color: "#4053D6"
+  icon: AWS/Database/Timestream.svg
+  abstract: true
+
+- name: Timestream::ScheduledQuery
+  subtitle: Scheduled Query
   color: "#4053D6"
   icon: AWS/Database/Timestream.svg
   abstract: true
@@ -5450,15 +7762,38 @@ resources:
 
 - name: Transfer
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
-  icon: AWS/Migration & Transfer/Migration-and-Transfer.svg
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
+  abstract: true
+
+- name: Transfer::Agreement
+  subtitle: Agreement
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
+  abstract: true
+
+- name: Transfer::Certificate
+  subtitle: Certificate
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
+  abstract: true
+
+- name: Transfer::Connector
+  subtitle: Connector
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
+  abstract: true
+
+- name: Transfer::Profile
+  subtitle: Profile
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
   abstract: true
 
 - name: Transfer::Server
   subtitle: Server
   color: "#2E907B"
-  icon: AWS/Migration & Transfer/Migration-and-Transfer.svg
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
   abstract: true
 
 - name: Transfer::User
@@ -5467,9 +7802,118 @@ resources:
   icon: AWS/_General/User.svg
   abstract: true
 
+- name: Transfer::Workflow
+  subtitle: Workflow
+  color: "#2E907B"
+  icon: AWS/Migration & Transfer/Migration-Transfer.svg
+  abstract: true
+
+- name: VerifiedPermissions
+  instanceOf: Service
+  color: "#DE2D34"
+  icon: AWS/SIC/Verified-Permissions.svg
+  abstract: true
+
+- name: VerifiedPermissions::IdentitySource
+  subtitle: Identity Source
+  color: "#DE2D34"
+  icon: AWS/SIC/Verified-Permissions.svg
+  abstract: true
+
+- name: VerifiedPermissions::Policy
+  subtitle: Policy
+  color: "#DE2D34"
+  icon: AWS/SIC/Verified-Permissions.svg
+  abstract: true
+
+- name: VerifiedPermissions::PolicyStore
+  subtitle: Policy Store
+  color: "#DE2D34"
+  icon: AWS/SIC/Verified-Permissions.svg
+  abstract: true
+
+- name: VerifiedPermissions::PolicyTemplate
+  subtitle: Policy Template
+  color: "#DE2D34"
+  icon: AWS/SIC/Verified-Permissions.svg
+  abstract: true
+
+- name: VoiceID
+  instanceOf: Service
+  abstract: true
+
+- name: VoiceID::Domain
+  subtitle: Domain
+  abstract: true
+
+- name: VpcLattice
+  instanceOf: Service
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::AccessLogSubscription
+  subtitle: Access Log Subscription
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::AuthPolicy
+  subtitle: Auth Policy
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::Listener
+  subtitle: Listener
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::ResourcePolicy
+  subtitle: Resource Policy
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::Rule
+  subtitle: Rule
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::Service
+  subtitle: Service
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::ServiceNetwork
+  subtitle: Service Network
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::ServiceNetworkServiceAssociation
+  subtitle: Service Network Service Association
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::ServiceNetworkVpcAssociation
+  subtitle: Service Network Vpc Association
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
+- name: VpcLattice::TargetGroup
+  subtitle: Target Group
+  color: "#7747D4"
+  icon: AWS/Networking/VPC-Lattice.svg
+  abstract: true
+
 - name: WAF
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
   abstract: true
@@ -5489,7 +7933,7 @@ resources:
 - name: WAF::Rule
   subtitle: Rule
   color: "#DE2D34"
-  icon: AWS/SIC/WAF.svg
+  icon: AWS/SIC/WAF_Rule.svg
   abstract: true
 
 - name: WAF::SizeConstraintSet
@@ -5518,7 +7962,6 @@ resources:
 
 - name: WAFRegional
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
   abstract: true
@@ -5591,13 +8034,18 @@ resources:
 
 - name: WAFv2
   instanceOf: Service
-  style: dashed
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
   abstract: true
 
 - name: WAFv2::IPSet
   subtitle: IP Set
+  color: "#DE2D34"
+  icon: AWS/SIC/WAF.svg
+  abstract: true
+
+- name: WAFv2::LoggingConfiguration
+  subtitle: Logging Configuration
   color: "#DE2D34"
   icon: AWS/SIC/WAF.svg
   abstract: true
@@ -5626,34 +8074,113 @@ resources:
   icon: AWS/SIC/WAF.svg
   abstract: true
 
+- name: Wisdom
+  instanceOf: Service
+  abstract: true
+
+- name: Wisdom::Assistant
+  subtitle: Assistant
+  abstract: true
+
+- name: Wisdom::AssistantAssociation
+  subtitle: Assistant Association
+  abstract: true
+
+- name: Wisdom::KnowledgeBase
+  subtitle: Knowledge Base
+  abstract: true
+
 - name: WorkSpaces
   instanceOf: Service
-  style: dashed
   color: "#2E907B"
-  icon: AWS/End User Computing/Workspaces.svg
+  icon: AWS/End User Computing/WorkSpaces-Family.svg
   abstract: true
 
 - name: WorkSpaces::ConnectionAlias
   subtitle: Connection Alias
   color: "#2E907B"
-  icon: AWS/End User Computing/Workspaces.svg
+  icon: AWS/End User Computing/WorkSpaces-Family.svg
   abstract: true
 
 - name: WorkSpaces::Workspace
   subtitle: Workspace
   color: "#2E907B"
-  icon: AWS/End User Computing/Workspaces.svg
+  icon: AWS/End User Computing/WorkSpaces-Family.svg
+  abstract: true
+
+- name: WorkSpacesThinClient
+  instanceOf: Service
+  color: "#2E907B"
+  icon: AWS/End User Computing/WorkSpaces-Thin-Client.svg
+  abstract: true
+
+- name: WorkSpacesThinClient::Environment
+  subtitle: Environment
+  color: "#2E907B"
+  icon: AWS/End User Computing/WorkSpaces-Thin-Client.svg
+  abstract: true
+
+- name: WorkSpacesWeb
+  instanceOf: Service
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::BrowserSettings
+  subtitle: Browser Settings
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::IdentityProvider
+  subtitle: Identity Provider
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::IpAccessSettings
+  subtitle: Ip Access Settings
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::NetworkSettings
+  subtitle: Network Settings
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::Portal
+  subtitle: Portal
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::TrustStore
+  subtitle: Trust Store
+  color: "#2E907B"
+  abstract: true
+
+- name: WorkSpacesWeb::UserAccessLoggingSettings
+  subtitle: User Access Logging Settings
+  color: "#2E907B"
+  icon: AWS/_General/User.svg
+  abstract: true
+
+- name: WorkSpacesWeb::UserSettings
+  subtitle: User Settings
+  color: "#2E907B"
+  icon: AWS/_General/User.svg
   abstract: true
 
 - name: XRay
   instanceOf: Service
-  style: dashed
   color: "#4053D6"
   icon: AWS/Dev Tools/X-Ray.svg
   abstract: true
 
 - name: XRay::Group
   subtitle: Group
+  color: "#4053D6"
+  icon: AWS/Dev Tools/X-Ray.svg
+  abstract: true
+
+- name: XRay::ResourcePolicy
+  subtitle: Resource Policy
   color: "#4053D6"
   icon: AWS/Dev Tools/X-Ray.svg
   abstract: true
